@@ -1,0 +1,5 @@
+sim:
+    update_rate: 20
+    noise:
+        mean: 0.05
+        std_dev: 0.035
