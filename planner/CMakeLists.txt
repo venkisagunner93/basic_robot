@@ -5,17 +5,22 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   ackermann_msgs
   tf2_ros
+  basic_robot
 )
 
 ###################################
 ## catkin specific configuration ##
 ###################################
-catkin_package()
+catkin_package(
+  INCLUDE_DIRS include
+)
 
 ###########
 ## Build ##
 ###########
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(include 
+  ${basic_robot_INCLUDE_DIRS}
+  ${catkin_INCLUDE_DIRS})
 
 add_executable(planner src/planner.cpp)
 

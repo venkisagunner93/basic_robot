@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rear_drive_controller</name>
+  <version>0.0.0</version>
+  <description>The rear_drive_controller package</description>
+  <maintainer email="venkatavaradhan93@gmail.com">Venkatavaradhan Vembanoor Lakshmi Narayanan</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>basic_robot</build_depend>
+  <build_depend>ackermann_msgs</build_depend>
+  <build_depend>rear_drive_interface</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>basic_robot</build_export_depend>
+  <build_export_depend>ackermann_msgs</build_export_depend>
+  <build_export_depend>rear_drive_interface</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>basic_robot</exec_depend>
+  <exec_depend>ackermann_msgs</exec_depend>
+  <exec_depend>rear_drive_interface</exec_depend>
+  <export>
+    <controller_interface plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>

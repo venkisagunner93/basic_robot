@@ -1,4 +1,4 @@
-#include "simulation/kinematics.h"
+#include "system/kinematics.h"
 
 Kinematics::Kinematics(const State& initial_state)
 {
@@ -6,7 +6,7 @@ Kinematics::Kinematics(const State& initial_state)
     last_time_ = ros::Time::now();
 }
 
-State Kinematics::computeStates(ackermann_msgs::AckermannDriveStamped control_input)
+State Kinematics::computeStates(ackermann_msgs::AckermannDriveStamped& control_input)
 {   
     if(control_input.drive.steering_angle > 30.0)
     {

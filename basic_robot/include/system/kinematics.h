@@ -14,44 +14,37 @@
 #include <ackermann_msgs/AckermannDriveStamped.h>
 #include <math.h>
 
-struct State
-{
-    float x;
-    float y;
-    float theta;
-};
+#include "basic_robot/basic_robot_types.h"
 
+/**
+ * @brief A basic robot's kinematics class
+ */
 class Kinematics
 {
     public:
         /**
-         * @brief Construct a new Kinematics object
-         * A constructor for Kinematics class
-         * @param initial_state 
+         * @brief A constructor for Kinematics class
+         * @param initial_state - Initial state of the basic robot
          */
         Kinematics(const State& initial_state);
         /**
-         * @brief Destroy the Kinematics object
-         * A destructor for Kinematics class
+         * @brief A destructor for Kinematics class
          */
         virtual ~Kinematics() {}
         /**
-         * @brief Compute states
-         * A method to compute new states of the system
-         * @param control_input 
-         * @return State 
+         * @brief A method to compute new states of the system
+         * @param control_input - Control input provided to the system
+         * @return State - State of the system computed using kinematics
          */
-        State computeStates(ackermann_msgs::AckermannDriveStamped control_input);
+        State computeStates(ackermann_msgs::AckermannDriveStamped& control_input);
 
     private:
         /**
-         * @brief Last time
-         * Last recorded time for dt calculation
+         * @brief Last recorded time for dt calculation
          */
         ros::Time last_time_;
         /**
-         * @brief State
-         * States of the system
+         * @brief State of basic robot
          */
         State state_;
 };

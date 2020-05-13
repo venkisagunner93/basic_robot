@@ -1,0 +1,69 @@
+\hypertarget{classKinematics}{}\section{Kinematics Class Reference}
+\label{classKinematics}\index{Kinematics@{Kinematics}}
+
+
+A basic robot\textquotesingle{}s kinematics class.  
+
+
+
+
+{\ttfamily \#include $<$kinematics.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classKinematics_adb48748237fe9076e7d8aac5b435e95f}{Kinematics} (const \hyperlink{structState}{State} \&initial\+\_\+state)
+\begin{DoxyCompactList}\small\item\em A constructor for \hyperlink{classKinematics}{Kinematics} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}\label{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}} 
+virtual \hyperlink{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}{$\sim$\+Kinematics} ()
+\begin{DoxyCompactList}\small\item\em A destructor for \hyperlink{classKinematics}{Kinematics} class. \end{DoxyCompactList}\item 
+\hyperlink{structState}{State} \hyperlink{classKinematics_abc359954c01ed158fe090e01b5539f06}{compute\+States} (ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
+\begin{DoxyCompactList}\small\item\em A method to compute new states of the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s kinematics class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKinematics_adb48748237fe9076e7d8aac5b435e95f}\label{classKinematics_adb48748237fe9076e7d8aac5b435e95f}} 
+\index{Kinematics@{Kinematics}!Kinematics@{Kinematics}}
+\index{Kinematics@{Kinematics}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{Kinematics()}{Kinematics()}}
+{\footnotesize\ttfamily Kinematics\+::\+Kinematics (\begin{DoxyParamCaption}\item[{const \hyperlink{structState}{State} \&}]{initial\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+A constructor for \hyperlink{classKinematics}{Kinematics} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+state} & -\/ Initial state of the basic robot \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKinematics_abc359954c01ed158fe090e01b5539f06}\label{classKinematics_abc359954c01ed158fe090e01b5539f06}} 
+\index{Kinematics@{Kinematics}!compute\+States@{compute\+States}}
+\index{compute\+States@{compute\+States}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{compute\+States()}{computeStates()}}
+{\footnotesize\ttfamily \hyperlink{structState}{State} Kinematics\+::compute\+States (\begin{DoxyParamCaption}\item[{ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&}]{control\+\_\+input }\end{DoxyParamCaption})}
+
+
+
+A method to compute new states of the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control\+\_\+input} & -\/ Control input provided to the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structState}{State} -\/ \hyperlink{structState}{State} of the system computed using kinematics 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+simulation/include/simulation/\hyperlink{kinematics_8h}{kinematics.\+h}\item 
+simulation/src/kinematics.\+cpp\end{DoxyCompactItemize}

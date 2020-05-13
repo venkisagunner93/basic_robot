@@ -13,46 +13,42 @@
 #include <ros/ros.h>
 #include <nav_msgs/OccupancyGrid.h>
 
+/**
+ * @brief A basic robot's map class
+ */
 class Map
 {
     public:
         /**
-         * @brief Construct a new Map object
-         * A constructor for Map class
-         * @param nh 
+         * @brief A constructor for Map class
+         * @param nh - Nodehandle for ROS communication
          */
         Map(ros::NodeHandle &nh);
         /**
-         * @brief Destroy the Map object
-         * A destructor for Map class
+         * @brief A destructor for Map class
          */
         virtual ~Map(){}
         /**
-         * @brief Print Map
-         * A method to print map from map server
+         * @brief A method to print map from map server
          */
         void printMap();
     
     private:
         /**
-         * @brief nh
-         * ROS Node handle
+         * @brief ROS Node handle
          */
         ros::NodeHandle nh_;
         /**
-         * @brief Map server subscriber
-         * ROS Subscriber instance for map
+         * @brief ROS Subscriber instance for map
          */
         ros::Subscriber map_server_subscriber_;
         /**
-         * @brief Map
-         * Map instance to store map from map server
+         * @brief Map instance to store map from map server
          */
         nav_msgs::OccupancyGrid map_;
         /**
-         * @brief Map server callback
-         * A subscriber callback to load map from map server
-         * @param msg 
+         * @brief A subscriber callback to load map from map server
+         * @param msg - A message that holds occupancy grid messages
          */
         void mapServerCallback(const nav_msgs::OccupancyGrid& msg);
 };

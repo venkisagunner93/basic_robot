@@ -20,7 +20,7 @@ Simulation::~Simulation()
 
 void Simulation::initializeTransports()
 {
-    cmd_vel_subscriber_ = nh_.subscribe("base/cmd_vel", 100, &Simulation::cmdVelCallback, this);
+    
     vel_feedback_publisher_ = nh_.advertise<ackermann_msgs::AckermannDriveStamped>("base/vel_feedback", 100, true);
 }
 
@@ -135,11 +135,6 @@ void Simulation::sendNoisyPose()
     transformStamped.transform.rotation.w = q.w();
     
     broadcaster_.sendTransform(transformStamped);
-}
-
-void Simulation::cmdVelCallback(const ackermann_msgs::AckermannDriveStamped& msg)
-{
-    control_input_ = msg;
 }
 
 int main(int argc, char** argv)
