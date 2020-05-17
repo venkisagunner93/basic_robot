@@ -31,3 +31,21 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_library(system
   src/system/kinematics.cpp)
+
+#############
+## Install ##
+#############
+
+# Install libraries
+install(TARGETS system
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+)
+
+# Install header files
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)
+
+install(DIRECTORY include/system/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}/system
+)

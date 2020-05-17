@@ -26,3 +26,16 @@ add_executable(planner src/planner.cpp)
 
 target_link_libraries(planner ${catkin_LIBRARIES})
 
+#############
+## Install ##
+#############
+
+install(TARGETS planner
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+# Install header files
+install(DIRECTORY include/${PROJECT_NAME}/ 
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)

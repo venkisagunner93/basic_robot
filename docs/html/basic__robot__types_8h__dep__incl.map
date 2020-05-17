@@ -1,6 +1,8 @@
 <map id="basic_robot/include/basic_robot/basic_robot_types.h" name="basic_robot/include/basic_robot/basic_robot_types.h">
-<area shape="rect" id="node2" href="$basic__robot_8h.html" title="A file for basic robot&#39;s header files. " alt="" coords="178,109,353,151"/>
-<area shape="rect" id="node3" href="$planner_8h.html" title="A class for basic robot&#39;s navigation. " alt="" coords="5,199,160,240"/>
-<area shape="rect" id="node4" href="$kinematics_8h.html" title="A class for basic robot&#39;s kinematics. " alt="" coords="184,199,347,240"/>
-<area shape="rect" id="node5" href="$simulation_8h.html" title="A class for basic robot&#39;s simulation. " alt="" coords="245,288,403,329"/>
+<area shape="rect" id="node2" href="$basic__robot_8h.html" title="A file for basic robot&#39;s header files. " alt="" coords="375,199,550,240"/>
+<area shape="rect" id="node7" href="$kinematics_8h.html" title="A class for basic robot&#39;s kinematics. " alt="" coords="500,109,647,151"/>
+<area shape="rect" id="node3" href="$planner_8h.html" title="A class for basic robot&#39;s navigation. " alt="" coords="5,303,160,344"/>
+<area shape="rect" id="node4" href="$simulation_8h.html" title="A class for basic robot&#39;s simulation. " alt="" coords="185,303,343,344"/>
+<area shape="rect" id="node5" href="$rear__drive__state__controller_8h.html" title="A basic robot&#39;s rear drive state controller class. " alt="" coords="367,288,558,359"/>
+<area shape="rect" id="node6" href="$rear__drive__command__controller_8h.html" title="A basic robot&#39;s rear drive command controller class. " alt="" coords="583,288,801,359"/>
 </map>

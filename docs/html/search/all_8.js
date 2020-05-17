@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['rear_5fdrive_5fcontroller_2eh',['rear_drive_controller.h',['../rear__drive__controller_8h.html',1,'']]],
-  ['rear_5fdrive_5finterface_2eh',['rear_drive_interface.h',['../rear__drive__interface_8h.html',1,'']]],
-  ['reardrivecontroller',['RearDriveController',['../classRearDriveController.html',1,'']]],
-  ['reardrivehandle',['RearDriveHandle',['../classhardware__interface_1_1RearDriveHandle.html',1,'hardware_interface::RearDriveHandle'],['../classhardware__interface_1_1RearDriveHandle.html#aadc121a01d6ffc14eb56f372b399a199',1,'hardware_interface::RearDriveHandle::RearDriveHandle()=default'],['../classhardware__interface_1_1RearDriveHandle.html#a313af502b28ff7b237b789e44093464c',1,'hardware_interface::RearDriveHandle::RearDriveHandle(const std::string &amp;name, const double *position, const double *velocity)']]],
-  ['reardriveinterface',['RearDriveInterface',['../classhardware__interface_1_1RearDriveInterface.html',1,'hardware_interface']]]
+  ['rear_5fdrive_5fcommand_5fcontroller_2eh',['rear_drive_command_controller.h',['../rear__drive__command__controller_8h.html',1,'']]],
+  ['rear_5fdrive_5fcommand_5finterface_2eh',['rear_drive_command_interface.h',['../rear__drive__command__interface_8h.html',1,'']]],
+  ['rear_5fdrive_5fstate_5fcontroller_2eh',['rear_drive_state_controller.h',['../rear__drive__state__controller_8h.html',1,'']]],
+  ['rear_5fdrive_5fstate_5finterface_2eh',['rear_drive_state_interface.h',['../rear__drive__state__interface_8h.html',1,'']]],
+  ['reardrivecommandcontroller',['RearDriveCommandController',['../classrear__drive__command__controller_1_1RearDriveCommandController.html',1,'rear_drive_command_controller::RearDriveCommandController'],['../classrear__drive__command__controller_1_1RearDriveCommandController.html#a9d9a2a13635c71d6831928bac5aa86a4',1,'rear_drive_command_controller::RearDriveCommandController::RearDriveCommandController()']]],
+  ['reardrivecommandhandle',['RearDriveCommandHandle',['../classhardware__interface_1_1RearDriveCommandHandle.html',1,'hardware_interface::RearDriveCommandHandle'],['../classhardware__interface_1_1RearDriveCommandHandle.html#ad3f05c6933b5dd9cf92e058cf62457a4',1,'hardware_interface::RearDriveCommandHandle::RearDriveCommandHandle()=default'],['../classhardware__interface_1_1RearDriveCommandHandle.html#a4771ab2032a90b1d9de1f401f6404a3a',1,'hardware_interface::RearDriveCommandHandle::RearDriveCommandHandle(const RearDriveStateHandle &amp;rear_drive_state_handle, double *position, double *velocity)']]],
+  ['reardrivecommandinterface',['RearDriveCommandInterface',['../classhardware__interface_1_1RearDriveCommandInterface.html',1,'hardware_interface']]],
+  ['reardrivestatecontroller',['RearDriveStateController',['../classrear__drive__state__controller_1_1RearDriveStateController.html',1,'rear_drive_state_controller']]],
+  ['reardrivestatehandle',['RearDriveStateHandle',['../classhardware__interface_1_1RearDriveStateHandle.html',1,'hardware_interface::RearDriveStateHandle'],['../classhardware__interface_1_1RearDriveStateHandle.html#aeb3d292f47c5dc8bc2225534ffdb4b99',1,'hardware_interface::RearDriveStateHandle::RearDriveStateHandle()=default'],['../classhardware__interface_1_1RearDriveStateHandle.html#abf8b4ca793044ef32d878647b792e8d3',1,'hardware_interface::RearDriveStateHandle::RearDriveStateHandle(const std::string &amp;name, const double *position, const double *velocity)']]],
+  ['reardrivestateinterface',['RearDriveStateInterface',['../classhardware__interface_1_1RearDriveStateInterface.html',1,'hardware_interface']]]
 ];

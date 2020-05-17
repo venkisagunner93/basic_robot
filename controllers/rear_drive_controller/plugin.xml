@@ -1,7 +1,0 @@
-<library path="lib/librear_drive_controller">
-  <class name="rear_drive_controller/RearDriveController" type="RearDriveController" base_class_type="controller_interface::ControllerBase">
-  <description>
-    The rear drive controller publishes the current rear drive as a sensor_msgs/JointState message. The rear drive controller expects a RearDriveInterface type of hardware interface.
-  </description>
-  </class>
-</library>

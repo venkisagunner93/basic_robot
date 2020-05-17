@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classhardware__interface_1_1RearDriveInterface.html" title="A basic robot&#39;s rear drive interface class. " alt="" coords="237,5,377,47"/>
+<area shape="rect" id="node1" href="$classhardware__interface_1_1RearDriveStateHandle.html" title="A basic robot&#39;s rear drive state handle class. " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node2" href="$classhardware__interface_1_1RearDriveCommandHandle.html" title="A basic robot&#39;s rear drive command handle class. " alt="" coords="215,5,405,47"/>
 </map>

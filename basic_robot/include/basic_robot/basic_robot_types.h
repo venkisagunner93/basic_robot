@@ -13,20 +13,27 @@
 /**
  * @brief A struct to represent the robot state
  */
-typedef struct
+struct State
 {
     float x; /**< X coordinate in space */
     float y; /**< Y coordinate in space */
     float theta; /**< Orientation of robot around Z axis (yaw) */
-} State;
+    /**
+     * @brief Construct a new State object
+     * @param p_x - X coordinate in space
+     * @param p_y - Y coordinate in space
+     * @param p_theta - Orientation of robot around Z axis (yaw)
+     */
+    State(float p_x = 0, float p_y = 0, float p_theta = 0) : x(p_x), y(p_y), theta(p_theta) {}
+};
 
 /**
  * @brief A struct to represent noise parameters
  */
-typedef struct
+struct NoiseParameters
 {
     float mean; /**< Mean of the noise */
     float std_dev; /**< Standard deviation of the noise */
-} NoiseParameters;
+};
 
 #endif  // BASIC_ROBOT_H

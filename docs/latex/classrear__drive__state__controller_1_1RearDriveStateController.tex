@@ -1,0 +1,121 @@
+\hypertarget{classrear__drive__state__controller_1_1RearDriveStateController}{}\section{rear\+\_\+drive\+\_\+state\+\_\+controller\+:\+:Rear\+Drive\+State\+Controller Class Reference}
+\label{classrear__drive__state__controller_1_1RearDriveStateController}\index{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}}
+
+
+A class for basic robot\textquotesingle{}s rear drive state controller.  
+
+
+
+
+{\ttfamily \#include $<$rear\+\_\+drive\+\_\+state\+\_\+controller.\+h$>$}
+
+
+
+Inheritance diagram for rear\+\_\+drive\+\_\+state\+\_\+controller\+:\+:Rear\+Drive\+State\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classrear__drive__state__controller_1_1RearDriveStateController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rear\+\_\+drive\+\_\+state\+\_\+controller\+:\+:Rear\+Drive\+State\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classrear__drive__state__controller_1_1RearDriveStateController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classrear__drive__state__controller_1_1RearDriveStateController_a4cade2fa3f7bf52491431548ad6a3d97}{init} (\hyperlink{classhardware__interface_1_1RearDriveStateInterface}{hardware\+\_\+interface\+::\+Rear\+Drive\+State\+Interface} $\ast$hw, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em A method to initialize rear drive state controller plugin. \end{DoxyCompactList}\item 
+void \hyperlink{classrear__drive__state__controller_1_1RearDriveStateController_a5eee03357f95a146b72947ce5f277a41}{update} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period)
+\begin{DoxyCompactList}\small\item\em A method to update data sent and received from actual hardware. \end{DoxyCompactList}\item 
+void \hyperlink{classrear__drive__state__controller_1_1RearDriveStateController_a53a87a7512f06f14c71a0bda39a7d37d}{starting} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em A method to run while starting rear drive controller. \end{DoxyCompactList}\item 
+void \hyperlink{classrear__drive__state__controller_1_1RearDriveStateController_af2618c5f4cadfde5a696aa6ad2ce6714}{stopping} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em A method to run for stopping rear drive controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for basic robot\textquotesingle{}s rear drive state controller. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrear__drive__state__controller_1_1RearDriveStateController_a4cade2fa3f7bf52491431548ad6a3d97}\label{classrear__drive__state__controller_1_1RearDriveStateController_a4cade2fa3f7bf52491431548ad6a3d97}} 
+\index{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}!init@{init}}
+\index{init@{init}!rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Rear\+Drive\+State\+Controller\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{classhardware__interface_1_1RearDriveStateInterface}{hardware\+\_\+interface\+::\+Rear\+Drive\+State\+Interface} $\ast$}]{hw,  }\item[{ros\+::\+Node\+Handle \&}]{nh }\end{DoxyParamCaption})}
+
+
+
+A method to initialize rear drive state controller plugin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hw} & -\/ Rear drive state interface instance \\
+\hline
+{\em nh} & -\/ R\+OS Node\+Handle for communications \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrear__drive__state__controller_1_1RearDriveStateController_a53a87a7512f06f14c71a0bda39a7d37d}\label{classrear__drive__state__controller_1_1RearDriveStateController_a53a87a7512f06f14c71a0bda39a7d37d}} 
+\index{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}!starting@{starting}}
+\index{starting@{starting}!rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}}
+\subsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily void rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller\+::starting (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A method to run while starting rear drive controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time or start time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrear__drive__state__controller_1_1RearDriveStateController_af2618c5f4cadfde5a696aa6ad2ce6714}\label{classrear__drive__state__controller_1_1RearDriveStateController_af2618c5f4cadfde5a696aa6ad2ce6714}} 
+\index{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}!stopping@{stopping}}
+\index{stopping@{stopping}!rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}}
+\subsubsection{\texorpdfstring{stopping()}{stopping()}}
+{\footnotesize\ttfamily void rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller\+::stopping (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A method to run for stopping rear drive controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time or stop time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrear__drive__state__controller_1_1RearDriveStateController_a5eee03357f95a146b72947ce5f277a41}\label{classrear__drive__state__controller_1_1RearDriveStateController_a5eee03357f95a146b72947ce5f277a41}} 
+\index{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}!update@{update}}
+\index{update@{update}!rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller@{rear\+\_\+drive\+\_\+state\+\_\+controller\+::\+Rear\+Drive\+State\+Controller}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Rear\+Drive\+State\+Controller\+::update (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})}
+
+
+
+A method to update data sent and received from actual hardware. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Maximum period allowed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+controllers/rear\+\_\+drive\+\_\+state\+\_\+controller/include/rear\+\_\+drive\+\_\+state\+\_\+controller/\hyperlink{rear__drive__state__controller_8h}{rear\+\_\+drive\+\_\+state\+\_\+controller.\+h}\item 
+controllers/rear\+\_\+drive\+\_\+state\+\_\+controller/src/rear\+\_\+drive\+\_\+state\+\_\+controller.\+cpp\end{DoxyCompactItemize}

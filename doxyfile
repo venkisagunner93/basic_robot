@@ -795,10 +795,14 @@ INPUT                  = planner/include/planner \
                          simulation/include/simulation \
                          simulation/src \
                          basic_robot/include/basic_robot \
-                         basic_robot/src \
-                         controllers/rear_drive_controller/include/rear_drive_controller \
-                         controllers/rear_drive_controller/src \
-                         hardware_interfaces/rear_drive_interface/include/rear_drive_interface
+                         basic_robot/include/system \
+                         basic_robot/src/system \
+                         controllers/rear_drive_state_controller/include/rear_drive_state_controller \
+                         controllers/rear_drive_state_controller/src \
+                         controllers/rear_drive_command_controller/include/rear_drive_command_controller \
+                         controllers/rear_drive_command_controller/src \
+                         hardware_interfaces/rear_drive_state_interface/include/rear_drive_state_interface \
+                         hardware_interfaces/rear_drive_command_interface/include/rear_drive_command_interface
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses

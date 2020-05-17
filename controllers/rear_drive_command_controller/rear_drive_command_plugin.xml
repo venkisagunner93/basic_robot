@@ -1,0 +1,7 @@
+<library path="lib/librear_drive_command_controller">
+  <class name="rear_drive_command_controller/RearDriveCommandController" type="rear_drive_command_controller::RearDriveCommandController" base_class_type="controller_interface::ControllerBase">
+  <description>
+    The rear drive command controller publishes the current rear drive as a ackermann message. The rear drive command controller expects a RearDriveInterface type of hardware interface.
+  </description>
+  </class>
+</library>
