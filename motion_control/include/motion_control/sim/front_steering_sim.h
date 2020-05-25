@@ -1,35 +1,35 @@
 /**
- * @file rear_drive_hw.h
+ * @file front_steering_sim.h
  * @author Venkatavaradhan Vembanoor Lakshmi Narayanan (venkatavaradhan93@gmail.com)
- * @brief A class for basic robot's rear drive hardware
+ * @brief A class for basic robot's front steering simulation
  * @version 0.1
  * @date 2020-05-24
  * @copyright Copyright (c) 2020
  */
 
-#ifndef REAR_DRIVE_HW_H
-#define REAR_DRIVE_HW_H
+#ifndef FRONT_STEERING_SIM_H
+#define FRONT_STEERING_SIM_H
 
-#include "motion_control/basic_robot_hw.h"
+#include "motion_control/sim/basic_robot_sim.h"
 
 /**
- * @brief A basic robot's rear drive hardware class
+ * @brief A basic robot's front steering simulation class
  */
-class RearDriveHW : public BasicRobotHW
+class FrontSteeringSim : public BasicRobotSim
 {
     public:
         /**
-         * @brief A method for reading from rear drive hardware
+         * @brief A method for reading from front steering simulation
          * @param time - Current time
          * @param period - Max period allowed
          */
         void read(const ros::Time& time, const ros::Duration& period);
         /**
-         * @brief A method for writing to rear drive hardware
+         * @brief A method for writing to front steering simulation
          * @param time - Current time
          * @param period - Max period allowed
          */
         void write(const ros::Time& time, const ros::Duration& period);
 };
 
-#endif  // REAR_DRIVE_HW_H
+#endif  // FRONT_STEERING_SIM_H

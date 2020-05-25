@@ -35,14 +35,28 @@ include_directories(include
   ${GAZEBO_INCLUDE_DIRS} 
   ${catkin_INCLUDE_DIRS})
 
+add_library(motion_control_hw_lib
+  src/hw/basic_robot_hw.cpp
+  src/hw/front_steering_hw.cpp
+  src/hw/rear_drive_hw.cpp
+)
+
+add_library(motion_control_sim_lib
+  src/sim/basic_robot_sim.cpp
+  src/sim/front_steering_sim.cpp
+  src/sim/rear_drive_sim.cpp
+)
+
 add_library(motion_control_lib
-  src/basic_robot_hw.cpp
-  src/front_steering_hw.cpp
-  src/rear_drive_hw.cpp
   src/motion_control.cpp)
 
-add_executable(motion_control src/motion_control_main.cpp)
-target_link_libraries(motion_control motion_control_lib ${catkin_LIBRARIES})
+target_link_libraries(motion_control_lib motion_control_hw_lib motion_control_sim_lib ${catkin_LIBRARIES})
+
+add_executable(motion_control_hw src/motion_control_hw_main.cpp)
+target_link_libraries(motion_control_hw motion_control_lib ${catkin_LIBRARIES})
+
+add_executable(motion_control_sim src/motion_control_sim_main.cpp)
+target_link_libraries(motion_control_sim motion_control_lib ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -54,7 +68,7 @@ install(TARGETS motion_control_lib
 )
 
 # Install executables
-install(TARGETS motion_control
+install(TARGETS motion_control_hw
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

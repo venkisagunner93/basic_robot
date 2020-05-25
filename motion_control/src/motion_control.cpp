@@ -6,11 +6,27 @@ MotionControl::MotionControl(const std::vector<BasicRobotHW*>& hardware) : hardw
     controller_manager_ = std::make_shared<controller_manager::ControllerManager>(&basic_robot_hw);
 }
 
-void MotionControl::readFromHW() const
+MotionControl::MotionControl(const std::vector<BasicRobotSim*>& sim) : sim_(sim)
 {
-    for(int i = 0; i < hardware_.size(); i++)
+    BasicRobotSim basic_robot_sim;
+    controller_manager_ = std::make_shared<controller_manager::ControllerManager>(&basic_robot_sim);
+}
+
+void MotionControl::read() const
+{
+    if(hardware_.size() > 0)
     {
-        hardware_[i]->read(ros::Time::now(), ros::Duration(1));
+        for(int i = 0; i < hardware_.size(); i++)
+        {
+            hardware_[i]->read(ros::Time::now(), ros::Duration(1));
+        }
+    }
+    else if(sim_.size() > 0)
+    {
+        for(int i = 0; i < sim_.size(); i++)
+        {
+            sim_[i]->read(ros::Time::now(), ros::Duration(1));
+        }
     }
 }
 
@@ -19,11 +35,21 @@ void MotionControl::updateControllers() const
     controller_manager_->update(ros::Time::now(), ros::Duration(0.1));
 }
 
-void MotionControl::writeToHW() const
+void MotionControl::write() const
 {
-    for(int i = 0; i < hardware_.size(); i++)
+    if(hardware_.size() > 0)
     {
-        hardware_[i]->write(ros::Time::now(), ros::Duration(1));
+        for(int i = 0; i < hardware_.size(); i++)
+        {
+            hardware_[i]->write(ros::Time::now(), ros::Duration(1));
+        }
+    }
+    else if(sim_.size() > 0)
+    {
+        for(int i = 0; i < sim_.size(); i++)
+        {
+            sim_[i]->write(ros::Time::now(), ros::Duration(1));
+        }
     }
 }
 

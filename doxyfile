@@ -805,7 +805,11 @@ INPUT                  = basic_robot/include/basic_robot \
                          hardware_interfaces/rear_drive_command_interface/include/rear_drive_command_interface \ 
                          hardware_interfaces/front_steering_state_interface/include/front_steering_state_interface \
                          hardware_interfaces/front_steering_command_interface/include/front_steering_command_interface \
+                         motion_control/include/motion_control/hw \
+                         motion_control/include/motion_control/sim \
                          motion_control/include/motion_control \
+                         motion_control/src/hw \
+                         motion_control/src/sim \
                          motion_control/src \
                          planner/include/planner \
                          planner/src \

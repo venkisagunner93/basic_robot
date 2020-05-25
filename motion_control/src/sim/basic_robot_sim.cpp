@@ -1,6 +1,6 @@
-#include "motion_control/basic_robot_hw.h"
+#include "motion_control/sim/basic_robot_sim.h"
 
-BasicRobotHW::BasicRobotHW()
+BasicRobotSim::BasicRobotSim()
 {
     std::vector<std::string> rear_joint_names = {"left_wheel", "right_wheel"};
     std::vector<std::string> front_joint_names = {"left_hub", "right_hub"};
@@ -26,12 +26,12 @@ BasicRobotHW::BasicRobotHW()
     registerInterface(&front_steering_command_);
 }
 
-void BasicRobotHW::read(const ros::Time& time, const ros::Duration& period)
+void BasicRobotSim::read(const ros::Time& time, const ros::Duration& period)
 {
     hardware_interface::RobotHW::read(time, period);
 }
 
-void BasicRobotHW::write(const ros::Time& time, const ros::Duration& period) 
+void BasicRobotSim::write(const ros::Time& time, const ros::Duration& period) 
 {
     hardware_interface::RobotHW::write(time, period);
 }

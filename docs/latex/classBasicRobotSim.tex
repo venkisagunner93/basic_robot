@@ -1,0 +1,116 @@
+\hypertarget{classBasicRobotSim}{}\section{Basic\+Robot\+Sim Class Reference}
+\label{classBasicRobotSim}\index{Basic\+Robot\+Sim@{Basic\+Robot\+Sim}}
+
+
+A basic robot\textquotesingle{}s simulation class.  
+
+
+
+
+{\ttfamily \#include $<$basic\+\_\+robot\+\_\+sim.\+h$>$}
+
+
+
+Inheritance diagram for Basic\+Robot\+Sim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classBasicRobotSim__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Basic\+Robot\+Sim\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classBasicRobotSim__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasicRobotSim_a8609903f149d0af379695b3c61fc1b9c}\label{classBasicRobotSim_a8609903f149d0af379695b3c61fc1b9c}} 
+\hyperlink{classBasicRobotSim_a8609903f149d0af379695b3c61fc1b9c}{Basic\+Robot\+Sim} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Basic Robot Sim instance. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBasicRobotSim_a8e6a778a8f79818f01dcf0211a3b8e3f}{read} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period) override
+\begin{DoxyCompactList}\small\item\em A virtual function for reading from front steering simulation. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBasicRobotSim_aa05ea705c931dacabb1e47d9ebab3174}{write} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period) override
+\begin{DoxyCompactList}\small\item\em A virtual function for writing to front steering simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasicRobotSim_ad6401472a3ca72298fedfb7a35c57ca5}\label{classBasicRobotSim_ad6401472a3ca72298fedfb7a35c57ca5}} 
+double \hyperlink{classBasicRobotSim_ad6401472a3ca72298fedfb7a35c57ca5}{position\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Position feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotSim_a7388b862cb3c8d56c78a5eda6fe2acc6}\label{classBasicRobotSim_a7388b862cb3c8d56c78a5eda6fe2acc6}} 
+double \hyperlink{classBasicRobotSim_a7388b862cb3c8d56c78a5eda6fe2acc6}{velocity\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Velocity feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotSim_a9fafb5a6015b915bd3ba9de35f9c1a8d}\label{classBasicRobotSim_a9fafb5a6015b915bd3ba9de35f9c1a8d}} 
+double \hyperlink{classBasicRobotSim_a9fafb5a6015b915bd3ba9de35f9c1a8d}{position\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Position command array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotSim_a679a476e5c6e125a91316f4acaf53c24}\label{classBasicRobotSim_a679a476e5c6e125a91316f4acaf53c24}} 
+double \hyperlink{classBasicRobotSim_a679a476e5c6e125a91316f4acaf53c24}{velocity\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Velocity command array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotSim_a885d1e8d5034e7f8a81d8ed0e1f5e5cc}\label{classBasicRobotSim_a885d1e8d5034e7f8a81d8ed0e1f5e5cc}} 
+double \hyperlink{classBasicRobotSim_a885d1e8d5034e7f8a81d8ed0e1f5e5cc}{wheel\+\_\+angle\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wheel angle feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotSim_ab454fb6e5feb31ae880e8efc3788f626}\label{classBasicRobotSim_ab454fb6e5feb31ae880e8efc3788f626}} 
+double \hyperlink{classBasicRobotSim_ab454fb6e5feb31ae880e8efc3788f626}{wheel\+\_\+angle\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wheel angle command array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s simulation class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBasicRobotSim_a8e6a778a8f79818f01dcf0211a3b8e3f}\label{classBasicRobotSim_a8e6a778a8f79818f01dcf0211a3b8e3f}} 
+\index{Basic\+Robot\+Sim@{Basic\+Robot\+Sim}!read@{read}}
+\index{read@{read}!Basic\+Robot\+Sim@{Basic\+Robot\+Sim}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Basic\+Robot\+Sim\+::read (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A virtual function for reading from front steering simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Max period allowed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFrontSteeringSim_ac9eceb29112f8238e344cd467fae9814}{Front\+Steering\+Sim}, and \hyperlink{classRearDriveSim_a663d8885fa61436bdd1112b14f2c5a31}{Rear\+Drive\+Sim}.
+
+\mbox{\Hypertarget{classBasicRobotSim_aa05ea705c931dacabb1e47d9ebab3174}\label{classBasicRobotSim_aa05ea705c931dacabb1e47d9ebab3174}} 
+\index{Basic\+Robot\+Sim@{Basic\+Robot\+Sim}!write@{write}}
+\index{write@{write}!Basic\+Robot\+Sim@{Basic\+Robot\+Sim}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Basic\+Robot\+Sim\+::write (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A virtual function for writing to front steering simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Max period allowed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFrontSteeringSim_afbf1c3df92319f90d5019729e9067585}{Front\+Steering\+Sim}, and \hyperlink{classRearDriveSim_a814f528a26c9dcf0b0d3490883abb2d2}{Rear\+Drive\+Sim}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+motion\+\_\+control/include/motion\+\_\+control/sim/\hyperlink{basic__robot__sim_8h}{basic\+\_\+robot\+\_\+sim.\+h}\item 
+motion\+\_\+control/src/sim/basic\+\_\+robot\+\_\+sim.\+cpp\end{DoxyCompactItemize}

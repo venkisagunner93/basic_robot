@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "motion_control");
+    ros::init(argc, argv, "motion_control_hw");
     ros::NodeHandle nh;  
 
     std::vector<BasicRobotHW*> hardware;
@@ -19,9 +19,9 @@ int main(int argc, char** argv)
 
     while (ros::ok())
     {
-        motion_control.readFromHW();
+        motion_control.read();
         motion_control.updateControllers();
-        motion_control.writeToHW();
+        motion_control.write();
         ros::Duration(motion_control.getLoopRate()).sleep();
     }
 

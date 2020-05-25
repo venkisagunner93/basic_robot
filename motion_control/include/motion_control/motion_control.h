@@ -12,8 +12,10 @@
 
 #include <controller_manager/controller_manager.h>
 
-#include "motion_control/rear_drive_hw.h"
-#include "motion_control/front_steering_hw.h"
+#include "motion_control/hw/rear_drive_hw.h"
+#include "motion_control/hw/front_steering_hw.h"
+#include "motion_control/sim/rear_drive_sim.h"
+#include "motion_control/sim/front_steering_sim.h"
 
 /**
  * @brief A basic robot's motion control class
@@ -23,19 +25,24 @@ class MotionControl
     public:
         /**
          * @brief Construct a new Motion Control instance
-         * @param drivers - A vector of drivers used for motion control
+         * @param hardware - A vector of hardware used for motion control
          */
-        explicit MotionControl(const std::vector<BasicRobotHW*>& drivers);
+        explicit MotionControl(const std::vector<BasicRobotHW*>& hardware);
         /**
-         * @brief A method to read from all hardware
+         * @brief Construct a new Motion Control instance
+         * @param sim - A vector of sim used for motion control
          */
-        void readFromHW() const;
+        explicit MotionControl(const std::vector<BasicRobotSim*>& sim);
         /**
-         * @brief A method to write to all hardware
+         * @brief A method to read from all hardware/sim
          */
-        void writeToHW() const;
+        void read() const;
         /**
-         * @brief A method to update all hardware controllers
+         * @brief A method to write to all hardware/sim
+         */
+        void write() const;
+        /**
+         * @brief A method to update all controllers
          */
         void updateControllers() const;
         /**
@@ -53,6 +60,10 @@ class MotionControl
          * @brief A vector of pointers to hardware
          */
         std::vector<BasicRobotHW*> hardware_;
+        /**
+         * @brief A vector of pointers to sim
+         */
+        std::vector<BasicRobotSim*> sim_;
         /**
          * @brief Controller manager to update all controllers
          */
