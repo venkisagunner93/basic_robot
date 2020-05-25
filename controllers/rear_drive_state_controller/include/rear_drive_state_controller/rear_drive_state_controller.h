@@ -1,7 +1,7 @@
 /**
  * @file rear_drive_state_controller.h
  * @author Venkatavaradhan Vembanoor Lakshmi Narayanan (venkatavaradhan93@gmail.com)
- * @brief A basic robot's rear drive state controller class
+ * @brief A class for basic robot's rear drive state controller
  * @version 0.1
  * @date 2020-05-10
  * @copyright Copyright (c) 2020
@@ -21,7 +21,7 @@
 namespace rear_drive_state_controller
 {
     /**
-     * @brief A class for basic robot's rear drive state controller
+     * @brief A basic robot's rear drive state controller class
      */
     class RearDriveStateController : public controller_interface::Controller<hardware_interface::RearDriveStateInterface>
     {

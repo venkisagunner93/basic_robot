@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['simulation',['Simulation',['../classSimulation.html',1,'']]],
-  ['state',['State',['../structState.html',1,'']]]
+  ['planner',['Planner',['../classPlanner.html',1,'']]]
 ];

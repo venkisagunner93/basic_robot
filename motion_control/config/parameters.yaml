@@ -1,0 +1,11 @@
+rear_drive_state_controller:
+    type: rear_drive_state_controller/RearDriveStateController
+
+rear_drive_command_controller:
+    type: rear_drive_command_controller/RearDriveCommandController
+
+front_steering_state_controller:
+    type: front_steering_state_controller/FrontSteeringStateController
+
+front_steering_command_controller:
+    type: front_steering_command_controller/FrontSteeringCommandController

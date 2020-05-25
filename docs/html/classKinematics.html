@@ -80,9 +80,21 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#ae84a8ae43ee20a8573f7e51471d159b5">~Kinematics</a> ()</td></tr>
 <tr class="memdesc:ae84a8ae43ee20a8573f7e51471d159b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for <a class="el" href="classKinematics.html" title="A basic robot&#39;s kinematics class. ">Kinematics</a> class. <br /></td></tr>
 <tr class="separator:ae84a8ae43ee20a8573f7e51471d159b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee778602a6079e9ac4db804b6b3e4547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#aee778602a6079e9ac4db804b6b3e4547">setRobotDimensions</a> (const <a class="el" href="structRobotDimensions.html">RobotDimensions</a> &amp;robot_dimensions)</td></tr>
+<tr class="memdesc:aee778602a6079e9ac4db804b6b3e4547"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to set the robot dimensions.  <a href="#aee778602a6079e9ac4db804b6b3e4547">More...</a><br /></td></tr>
+<tr class="separator:aee778602a6079e9ac4db804b6b3e4547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f16185dd4942d6423d3ac4997de839f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRobotDimensions.html">RobotDimensions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#a8f16185dd4942d6423d3ac4997de839f">getRobotDimensions</a> () const</td></tr>
+<tr class="memdesc:a8f16185dd4942d6423d3ac4997de839f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to get the robot dimensions.  <a href="#a8f16185dd4942d6423d3ac4997de839f">More...</a><br /></td></tr>
+<tr class="separator:a8f16185dd4942d6423d3ac4997de839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc359954c01ed158fe090e01b5539f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structState.html">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#abc359954c01ed158fe090e01b5539f06">computeStates</a> (ackermann_msgs::AckermannDriveStamped &amp;control_input)</td></tr>
 <tr class="memdesc:abc359954c01ed158fe090e01b5539f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute new states of the system.  <a href="#abc359954c01ed158fe090e01b5539f06">More...</a><br /></td></tr>
 <tr class="separator:abc359954c01ed158fe090e01b5539f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e5528ca44f82edae99025410595a36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structFrontWheel.html">FrontWheel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#af5e5528ca44f82edae99025410595a36">computeFrontWheelHubAngles</a> (const ackermann_msgs::AckermannDriveStamped &amp;control_input)</td></tr>
+<tr class="memdesc:af5e5528ca44f82edae99025410595a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute front wheel hub angles.  <a href="#af5e5528ca44f82edae99025410595a36">More...</a><br /></td></tr>
+<tr class="separator:af5e5528ca44f82edae99025410595a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2733720e49bcd20662e74ea9334a878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRearWheel.html">RearWheel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#ac2733720e49bcd20662e74ea9334a878">computeRearWheelVelocities</a> (const ackermann_msgs::AckermannDriveStamped &amp;control_input)</td></tr>
+<tr class="memdesc:ac2733720e49bcd20662e74ea9334a878"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute rear wheel velocities.  <a href="#ac2733720e49bcd20662e74ea9334a878">More...</a><br /></td></tr>
+<tr class="separator:ac2733720e49bcd20662e74ea9334a878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A basic robot's kinematics class. </p>
@@ -106,7 +118,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <p>A constructor for <a class="el" href="classKinematics.html" title="A basic robot&#39;s kinematics class. ">Kinematics</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">initial_state</td><td>- Initial state of the basic robot </td></tr>
+    <tr><td class="paramname">initial_state</td><td>- Initial state of basic robot </td></tr>
   </table>
   </dd>
 </dl>
@@ -114,6 +126,60 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af5e5528ca44f82edae99025410595a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5e5528ca44f82edae99025410595a36">&#9670;&nbsp;</a></span>computeFrontWheelHubAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structFrontWheel.html">FrontWheel</a> Kinematics::computeFrontWheelHubAngles </td>
+          <td>(</td>
+          <td class="paramtype">const ackermann_msgs::AckermannDriveStamped &amp;&#160;</td>
+          <td class="paramname"><em>control_input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to compute front wheel hub angles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control_input</td><td>- Control input provided to the system </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structFrontWheel.html" title="A struct to represent robot front wheel hub angles. ">FrontWheel</a> - Steering angles of the front wheels </dd></dl>
+
+</div>
+</div>
+<a id="ac2733720e49bcd20662e74ea9334a878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2733720e49bcd20662e74ea9334a878">&#9670;&nbsp;</a></span>computeRearWheelVelocities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRearWheel.html">RearWheel</a> Kinematics::computeRearWheelVelocities </td>
+          <td>(</td>
+          <td class="paramtype">const ackermann_msgs::AckermannDriveStamped &amp;&#160;</td>
+          <td class="paramname"><em>control_input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to compute rear wheel velocities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">control_input</td><td>- Control input provided to the system </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structRearWheel.html" title="A struct to represent robot rear wheel velocities. ">RearWheel</a> - Rear wheel differential velocities </dd></dl>
+
+</div>
+</div>
 <a id="abc359954c01ed158fe090e01b5539f06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc359954c01ed158fe090e01b5539f06">&#9670;&nbsp;</a></span>computeStates()</h2>
 
@@ -138,6 +204,52 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structState.html" title="A struct to represent the robot state. ">State</a> - <a class="el" href="structState.html" title="A struct to represent the robot state. ">State</a> of the system computed using kinematics </dd></dl>
+
+</div>
+</div>
+<a id="a8f16185dd4942d6423d3ac4997de839f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f16185dd4942d6423d3ac4997de839f">&#9670;&nbsp;</a></span>getRobotDimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structRobotDimensions.html">RobotDimensions</a> Kinematics::getRobotDimensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to get the robot dimensions. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structRobotDimensions.html" title="A struct to represent basic robot dimensions. ">RobotDimensions</a> - Dimensions of basic robot </dd></dl>
+
+</div>
+</div>
+<a id="aee778602a6079e9ac4db804b6b3e4547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee778602a6079e9ac4db804b6b3e4547">&#9670;&nbsp;</a></span>setRobotDimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Kinematics::setRobotDimensions </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structRobotDimensions.html">RobotDimensions</a> &amp;&#160;</td>
+          <td class="paramname"><em>robot_dimensions</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to set the robot dimensions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot_dimensions</td><td>- Dimensions of basic robot </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

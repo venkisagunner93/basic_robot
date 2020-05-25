@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['std_5fdev',['std_dev',['../structNoiseParameters.html#a5374d40ef231b5ee1d36a3130766174a',1,'NoiseParameters']]]
+  ['mean',['mean',['../structNoiseParameters.html#ac51a65e4d895c69eb68d62cabf647b5c',1,'NoiseParameters']]]
 ];

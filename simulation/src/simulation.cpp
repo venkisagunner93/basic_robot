@@ -8,7 +8,13 @@ Simulation::Simulation(ros::NodeHandle& nh) : nh_(nh)
     initial_state.x = 0;
     initial_state.y = 0;
     initial_state.theta = 0;
+
     kinematics_ = std::make_shared<Kinematics>(initial_state);
+
+    RobotDimensions robot_dimensions;
+    robot_dimensions.length = 0.5;  // in meters
+    robot_dimensions.width = 0.3;  // in meters
+    kinematics_->setRobotDimensions(robot_dimensions);
 
     initializeTransports();
 }

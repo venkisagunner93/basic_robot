@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['planner_2eh',['planner.h',['../planner_8h.html',1,'']]]
+  ['map_2eh',['map.h',['../map_8h.html',1,'']]],
+  ['motion_5fcontrol_2eh',['motion_control.h',['../motion__control_8h.html',1,'']]]
 ];

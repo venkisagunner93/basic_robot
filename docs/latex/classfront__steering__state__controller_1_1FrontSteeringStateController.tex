@@ -1,0 +1,124 @@
+\hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController}{}\section{front\+\_\+steering\+\_\+state\+\_\+controller\+:\+:Front\+Steering\+State\+Controller Class Reference}
+\label{classfront__steering__state__controller_1_1FrontSteeringStateController}\index{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}}
+
+
+A basic robot\textquotesingle{}s front steering state controller class.  
+
+
+
+
+{\ttfamily \#include $<$front\+\_\+steering\+\_\+state\+\_\+controller.\+h$>$}
+
+
+
+Inheritance diagram for front\+\_\+steering\+\_\+state\+\_\+controller\+:\+:Front\+Steering\+State\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfront__steering__state__controller_1_1FrontSteeringStateController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for front\+\_\+steering\+\_\+state\+\_\+controller\+:\+:Front\+Steering\+State\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfront__steering__state__controller_1_1FrontSteeringStateController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController_a9cc4c0139f25b6ca500c5e71e71b5dd7}\label{classfront__steering__state__controller_1_1FrontSteeringStateController_a9cc4c0139f25b6ca500c5e71e71b5dd7}} 
+\hyperlink{classfront__steering__state__controller_1_1FrontSteeringStateController_a9cc4c0139f25b6ca500c5e71e71b5dd7}{Front\+Steering\+State\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Front Drive \hyperlink{structState}{State} Controller object. \end{DoxyCompactList}\item 
+bool \hyperlink{classfront__steering__state__controller_1_1FrontSteeringStateController_a8e5a8ca89d16e85900d3a79df1e75a29}{init} (\hyperlink{classhardware__interface_1_1FrontSteeringStateInterface}{hardware\+\_\+interface\+::\+Front\+Steering\+State\+Interface} $\ast$hw, ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em A method to initialize front steering state controller plugin. \end{DoxyCompactList}\item 
+void \hyperlink{classfront__steering__state__controller_1_1FrontSteeringStateController_a3c8233a79607610b9c8c21084217268e}{update} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period)
+\begin{DoxyCompactList}\small\item\em A method to update data sent and received from actual hardware. \end{DoxyCompactList}\item 
+void \hyperlink{classfront__steering__state__controller_1_1FrontSteeringStateController_acb8a5004ff18ed976ea25204947d0b94}{starting} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em A method to run while starting front steering controller. \end{DoxyCompactList}\item 
+void \hyperlink{classfront__steering__state__controller_1_1FrontSteeringStateController_a240b6e43acfd4f7ed4bfa159209183b6}{stopping} (const ros\+::\+Time \&time)
+\begin{DoxyCompactList}\small\item\em A method to run for stopping front steering controller. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s front steering state controller class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController_a8e5a8ca89d16e85900d3a79df1e75a29}\label{classfront__steering__state__controller_1_1FrontSteeringStateController_a8e5a8ca89d16e85900d3a79df1e75a29}} 
+\index{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}!init@{init}}
+\index{init@{init}!front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Front\+Steering\+State\+Controller\+::init (\begin{DoxyParamCaption}\item[{\hyperlink{classhardware__interface_1_1FrontSteeringStateInterface}{hardware\+\_\+interface\+::\+Front\+Steering\+State\+Interface} $\ast$}]{hw,  }\item[{ros\+::\+Node\+Handle \&}]{nh }\end{DoxyParamCaption})}
+
+
+
+A method to initialize front steering state controller plugin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hw} & -\/ Front steering state interface instance \\
+\hline
+{\em nh} & -\/ R\+OS Node\+Handle for communications \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController_acb8a5004ff18ed976ea25204947d0b94}\label{classfront__steering__state__controller_1_1FrontSteeringStateController_acb8a5004ff18ed976ea25204947d0b94}} 
+\index{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}!starting@{starting}}
+\index{starting@{starting}!front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}}
+\subsubsection{\texorpdfstring{starting()}{starting()}}
+{\footnotesize\ttfamily void front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller\+::starting (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A method to run while starting front steering controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time or start time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController_a240b6e43acfd4f7ed4bfa159209183b6}\label{classfront__steering__state__controller_1_1FrontSteeringStateController_a240b6e43acfd4f7ed4bfa159209183b6}} 
+\index{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}!stopping@{stopping}}
+\index{stopping@{stopping}!front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}}
+\subsubsection{\texorpdfstring{stopping()}{stopping()}}
+{\footnotesize\ttfamily void front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller\+::stopping (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A method to run for stopping front steering controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time or stop time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfront__steering__state__controller_1_1FrontSteeringStateController_a3c8233a79607610b9c8c21084217268e}\label{classfront__steering__state__controller_1_1FrontSteeringStateController_a3c8233a79607610b9c8c21084217268e}} 
+\index{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}!update@{update}}
+\index{update@{update}!front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller@{front\+\_\+steering\+\_\+state\+\_\+controller\+::\+Front\+Steering\+State\+Controller}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Front\+Steering\+State\+Controller\+::update (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})}
+
+
+
+A method to update data sent and received from actual hardware. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Maximum period allowed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+controllers/front\+\_\+steering\+\_\+state\+\_\+controller/include/front\+\_\+steering\+\_\+state\+\_\+controller/\hyperlink{front__steering__state__controller_8h}{front\+\_\+steering\+\_\+state\+\_\+controller.\+h}\item 
+controllers/front\+\_\+steering\+\_\+state\+\_\+controller/src/front\+\_\+steering\+\_\+state\+\_\+controller.\+cpp\end{DoxyCompactItemize}

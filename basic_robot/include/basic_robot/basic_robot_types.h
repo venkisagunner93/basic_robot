@@ -36,4 +36,31 @@ struct NoiseParameters
     float std_dev; /**< Standard deviation of the noise */
 };
 
+/**
+ * @brief A struct to represent robot front wheel hub angles
+ */
+struct FrontWheel
+{
+    float right_hub_angle; /**< Right hub angle */
+    float left_hub_angle; /**< Left hub angle */
+};
+
+/**
+ * @brief A struct to represent robot rear wheel velocities
+ */
+struct RearWheel
+{
+    float right_velocity; /**< Right wheel velocity */
+    float left_velocity; /**< Left wheel velocity */
+};
+
+/**
+ * @brief A struct to represent basic robot dimensions
+ */
+struct RobotDimensions
+{
+    float length; /**< Length of basic robot */
+    float width; /**< Width of basic robot */
+};
+
 #endif  // BASIC_ROBOT_H

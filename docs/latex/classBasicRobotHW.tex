@@ -1,0 +1,114 @@
+\hypertarget{classBasicRobotHW}{}\section{Basic\+Robot\+HW Class Reference}
+\label{classBasicRobotHW}\index{Basic\+Robot\+HW@{Basic\+Robot\+HW}}
+
+
+A basic robot\textquotesingle{}s hardware class.  
+
+
+
+
+{\ttfamily \#include $<$basic\+\_\+robot\+\_\+hw.\+h$>$}
+
+
+
+Inheritance diagram for Basic\+Robot\+HW\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classBasicRobotHW__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Basic\+Robot\+HW\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classBasicRobotHW__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasicRobotHW_ae960fde21682e9be050fcd171bd5c671}\label{classBasicRobotHW_ae960fde21682e9be050fcd171bd5c671}} 
+\hyperlink{classBasicRobotHW_ae960fde21682e9be050fcd171bd5c671}{Basic\+Robot\+HW} ()
+\begin{DoxyCompactList}\small\item\em Construct a new Basic Robot HW instance. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBasicRobotHW_a4246adb060fa49a3eb9d5d26845b6425}{read} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period) override
+\begin{DoxyCompactList}\small\item\em A virtual function for reading from front steering hardware. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classBasicRobotHW_a62add5eabfca2f88a5035db8b8240bb3}{write} (const ros\+::\+Time \&time, const ros\+::\+Duration \&period) override
+\begin{DoxyCompactList}\small\item\em A virtual function for writing to front steering hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasicRobotHW_a90dca1f10ddc925ce7194fbd2478c102}\label{classBasicRobotHW_a90dca1f10ddc925ce7194fbd2478c102}} 
+double \hyperlink{classBasicRobotHW_a90dca1f10ddc925ce7194fbd2478c102}{position\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Position feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotHW_a4857c5d15155ee70226d0df2c5a4cb13}\label{classBasicRobotHW_a4857c5d15155ee70226d0df2c5a4cb13}} 
+double \hyperlink{classBasicRobotHW_a4857c5d15155ee70226d0df2c5a4cb13}{velocity\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Velocity feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotHW_afee748bd8f37242c83de98f6c39f40c7}\label{classBasicRobotHW_afee748bd8f37242c83de98f6c39f40c7}} 
+double \hyperlink{classBasicRobotHW_afee748bd8f37242c83de98f6c39f40c7}{position\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Position command array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotHW_a7ef5f4df8fcceab6386bc31d07da1644}\label{classBasicRobotHW_a7ef5f4df8fcceab6386bc31d07da1644}} 
+double \hyperlink{classBasicRobotHW_a7ef5f4df8fcceab6386bc31d07da1644}{velocity\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Velocity command array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotHW_a49e35de85f6c83cf260af3d38c52048c}\label{classBasicRobotHW_a49e35de85f6c83cf260af3d38c52048c}} 
+double \hyperlink{classBasicRobotHW_a49e35de85f6c83cf260af3d38c52048c}{wheel\+\_\+angle\+\_\+feedback\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wheel angle feedback array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasicRobotHW_a10eda38eb2d290958f80f4bbeb33a66d}\label{classBasicRobotHW_a10eda38eb2d290958f80f4bbeb33a66d}} 
+double \hyperlink{classBasicRobotHW_a10eda38eb2d290958f80f4bbeb33a66d}{wheel\+\_\+angle\+\_\+command\+\_\+} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wheel angle command array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s hardware class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBasicRobotHW_a4246adb060fa49a3eb9d5d26845b6425}\label{classBasicRobotHW_a4246adb060fa49a3eb9d5d26845b6425}} 
+\index{Basic\+Robot\+HW@{Basic\+Robot\+HW}!read@{read}}
+\index{read@{read}!Basic\+Robot\+HW@{Basic\+Robot\+HW}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily void Basic\+Robot\+H\+W\+::read (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A virtual function for reading from front steering hardware. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Max period allowed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFrontSteeringHW_aa037e3ea1fbc4e58b40e236810bed3ca}{Front\+Steering\+HW}, and \hyperlink{classRearDriveHW_adcce3bb0a7735810edeaf44bb2f71dee}{Rear\+Drive\+HW}.
+
+\mbox{\Hypertarget{classBasicRobotHW_a62add5eabfca2f88a5035db8b8240bb3}\label{classBasicRobotHW_a62add5eabfca2f88a5035db8b8240bb3}} 
+\index{Basic\+Robot\+HW@{Basic\+Robot\+HW}!write@{write}}
+\index{write@{write}!Basic\+Robot\+HW@{Basic\+Robot\+HW}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Basic\+Robot\+H\+W\+::write (\begin{DoxyParamCaption}\item[{const ros\+::\+Time \&}]{time,  }\item[{const ros\+::\+Duration \&}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+A virtual function for writing to front steering hardware. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/ Current time \\
+\hline
+{\em period} & -\/ Max period allowed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classFrontSteeringHW_aa0e57cc4919044aecb7d1c76c8d4ac21}{Front\+Steering\+HW}, and \hyperlink{classRearDriveHW_a36461317b3f595464ef080259bc21fae}{Rear\+Drive\+HW}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+motion\+\_\+control/include/motion\+\_\+control/\hyperlink{basic__robot__hw_8h}{basic\+\_\+robot\+\_\+hw.\+h}\item 
+motion\+\_\+control/src/basic\+\_\+robot\+\_\+hw.\+cpp\end{DoxyCompactItemize}

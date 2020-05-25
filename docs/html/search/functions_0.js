@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['computestates',['computeStates',['../classKinematics.html#abc359954c01ed158fe090e01b5539f06',1,'Kinematics']]]
+  ['basicrobothw',['BasicRobotHW',['../classBasicRobotHW.html#ae960fde21682e9be050fcd171bd5c671',1,'BasicRobotHW']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['map',['Map',['../classMap.html',1,'Map'],['../classMap.html#a12306af718f86c34dad3873a67d64280',1,'Map::Map()']]],
-  ['map_2eh',['map.h',['../map_8h.html',1,'']]],
-  ['mean',['mean',['../structNoiseParameters.html#ac51a65e4d895c69eb68d62cabf647b5c',1,'NoiseParameters']]]
+  ['kinematics',['Kinematics',['../classKinematics.html',1,'Kinematics'],['../classKinematics.html#adb48748237fe9076e7d8aac5b435e95f',1,'Kinematics::Kinematics()']]],
+  ['kinematics_2eh',['kinematics.h',['../kinematics_8h.html',1,'']]]
 ];

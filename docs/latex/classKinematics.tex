@@ -17,8 +17,16 @@ A basic robot\textquotesingle{}s kinematics class.
 \mbox{\Hypertarget{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}\label{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}} 
 virtual \hyperlink{classKinematics_ae84a8ae43ee20a8573f7e51471d159b5}{$\sim$\+Kinematics} ()
 \begin{DoxyCompactList}\small\item\em A destructor for \hyperlink{classKinematics}{Kinematics} class. \end{DoxyCompactList}\item 
+void \hyperlink{classKinematics_aee778602a6079e9ac4db804b6b3e4547}{set\+Robot\+Dimensions} (const \hyperlink{structRobotDimensions}{Robot\+Dimensions} \&robot\+\_\+dimensions)
+\begin{DoxyCompactList}\small\item\em A method to set the robot dimensions. \end{DoxyCompactList}\item 
+\hyperlink{structRobotDimensions}{Robot\+Dimensions} \hyperlink{classKinematics_a8f16185dd4942d6423d3ac4997de839f}{get\+Robot\+Dimensions} () const
+\begin{DoxyCompactList}\small\item\em A method to get the robot dimensions. \end{DoxyCompactList}\item 
 \hyperlink{structState}{State} \hyperlink{classKinematics_abc359954c01ed158fe090e01b5539f06}{compute\+States} (ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
-\begin{DoxyCompactList}\small\item\em A method to compute new states of the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A method to compute new states of the system. \end{DoxyCompactList}\item 
+\hyperlink{structFrontWheel}{Front\+Wheel} \hyperlink{classKinematics_af5e5528ca44f82edae99025410595a36}{compute\+Front\+Wheel\+Hub\+Angles} (const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
+\begin{DoxyCompactList}\small\item\em A method to compute front wheel hub angles. \end{DoxyCompactList}\item 
+\hyperlink{structRearWheel}{Rear\+Wheel} \hyperlink{classKinematics_ac2733720e49bcd20662e74ea9334a878}{compute\+Rear\+Wheel\+Velocities} (const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
+\begin{DoxyCompactList}\small\item\em A method to compute rear wheel velocities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -37,12 +45,48 @@ A constructor for \hyperlink{classKinematics}{Kinematics} class.
 
 
 \begin{DoxyParams}{Parameters}
-{\em initial\+\_\+state} & -\/ Initial state of the basic robot \\
+{\em initial\+\_\+state} & -\/ Initial state of basic robot \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classKinematics_af5e5528ca44f82edae99025410595a36}\label{classKinematics_af5e5528ca44f82edae99025410595a36}} 
+\index{Kinematics@{Kinematics}!compute\+Front\+Wheel\+Hub\+Angles@{compute\+Front\+Wheel\+Hub\+Angles}}
+\index{compute\+Front\+Wheel\+Hub\+Angles@{compute\+Front\+Wheel\+Hub\+Angles}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{compute\+Front\+Wheel\+Hub\+Angles()}{computeFrontWheelHubAngles()}}
+{\footnotesize\ttfamily \hyperlink{structFrontWheel}{Front\+Wheel} Kinematics\+::compute\+Front\+Wheel\+Hub\+Angles (\begin{DoxyParamCaption}\item[{const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&}]{control\+\_\+input }\end{DoxyParamCaption})}
+
+
+
+A method to compute front wheel hub angles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control\+\_\+input} & -\/ Control input provided to the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structFrontWheel}{Front\+Wheel} -\/ Steering angles of the front wheels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKinematics_ac2733720e49bcd20662e74ea9334a878}\label{classKinematics_ac2733720e49bcd20662e74ea9334a878}} 
+\index{Kinematics@{Kinematics}!compute\+Rear\+Wheel\+Velocities@{compute\+Rear\+Wheel\+Velocities}}
+\index{compute\+Rear\+Wheel\+Velocities@{compute\+Rear\+Wheel\+Velocities}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{compute\+Rear\+Wheel\+Velocities()}{computeRearWheelVelocities()}}
+{\footnotesize\ttfamily \hyperlink{structRearWheel}{Rear\+Wheel} Kinematics\+::compute\+Rear\+Wheel\+Velocities (\begin{DoxyParamCaption}\item[{const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&}]{control\+\_\+input }\end{DoxyParamCaption})}
+
+
+
+A method to compute rear wheel velocities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em control\+\_\+input} & -\/ Control input provided to the system \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structRearWheel}{Rear\+Wheel} -\/ Rear wheel differential velocities 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classKinematics_abc359954c01ed158fe090e01b5539f06}\label{classKinematics_abc359954c01ed158fe090e01b5539f06}} 
 \index{Kinematics@{Kinematics}!compute\+States@{compute\+States}}
 \index{compute\+States@{compute\+States}!Kinematics@{Kinematics}}
@@ -61,6 +105,34 @@ A method to compute new states of the system.
 \begin{DoxyReturn}{Returns}
 \hyperlink{structState}{State} -\/ \hyperlink{structState}{State} of the system computed using kinematics 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classKinematics_a8f16185dd4942d6423d3ac4997de839f}\label{classKinematics_a8f16185dd4942d6423d3ac4997de839f}} 
+\index{Kinematics@{Kinematics}!get\+Robot\+Dimensions@{get\+Robot\+Dimensions}}
+\index{get\+Robot\+Dimensions@{get\+Robot\+Dimensions}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{get\+Robot\+Dimensions()}{getRobotDimensions()}}
+{\footnotesize\ttfamily \hyperlink{structRobotDimensions}{Robot\+Dimensions} Kinematics\+::get\+Robot\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A method to get the robot dimensions. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{structRobotDimensions}{Robot\+Dimensions} -\/ Dimensions of basic robot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKinematics_aee778602a6079e9ac4db804b6b3e4547}\label{classKinematics_aee778602a6079e9ac4db804b6b3e4547}} 
+\index{Kinematics@{Kinematics}!set\+Robot\+Dimensions@{set\+Robot\+Dimensions}}
+\index{set\+Robot\+Dimensions@{set\+Robot\+Dimensions}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{set\+Robot\+Dimensions()}{setRobotDimensions()}}
+{\footnotesize\ttfamily void Kinematics\+::set\+Robot\+Dimensions (\begin{DoxyParamCaption}\item[{const \hyperlink{structRobotDimensions}{Robot\+Dimensions} \&}]{robot\+\_\+dimensions }\end{DoxyParamCaption})}
+
+
+
+A method to set the robot dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+\_\+dimensions} & -\/ Dimensions of basic robot \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

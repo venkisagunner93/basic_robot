@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="controllers" value="rear_drive_state_controller rear_drive_command_controller front_steering_command_controller front_steering_state_controller"/>
+    <rosparam file="$(find motion_control)/config/parameters.yaml" command="load"/>
+
+    <node name="motion_control_sim" pkg="motion_control" type="motion_control_sim" output="screen"/>
+    <node name="controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn $(arg controllers)"/>
+</launch>

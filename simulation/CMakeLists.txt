@@ -36,11 +36,6 @@ target_link_libraries(sim sim_lib ${catkin_LIBRARIES})
 ## Install ##
 #############
 
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE)
-
 # Install libraries
 install(TARGETS sim_lib
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}

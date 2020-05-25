@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noiseparameters',['NoiseParameters',['../structNoiseParameters.html',1,'']]]
+  ['kinematics',['Kinematics',['../classKinematics.html',1,'']]]
 ];

@@ -6,6 +6,11 @@ RearDriveCommandController::RearDriveCommandController() : kinematics_(Kinematic
 
 bool RearDriveCommandController::init(hardware_interface::RearDriveCommandInterface* hw, ros::NodeHandle& nh)
 {
+    RobotDimensions robot_dimensions;
+    robot_dimensions.length = 0.5;  // in meters
+    robot_dimensions.width = 0.3;  // in meters
+    kinematics_.setRobotDimensions(robot_dimensions);
+
     const std::vector<std::string>& joint_names = hw->getNames();
     
     for(int i = 0; i < joint_names.size(); i++)
@@ -21,10 +26,7 @@ bool RearDriveCommandController::init(hardware_interface::RearDriveCommandInterf
 
 void RearDriveCommandController::update(const ros::Time& time, const ros::Duration& period)
 {
-    for(unsigned int i = 0; i < rear_drive_command_handle_.size(); i++)
-    {
-        rear_drive_command_handle_[i].setVelocity(control_input_.drive.speed);
-    }
+    kinematics_.computeRearWheelVelocities(control_input_);
 }
 
 void RearDriveCommandController::cmdVelCallback(const ackermann_msgs::AckermannDriveStamped& msg)

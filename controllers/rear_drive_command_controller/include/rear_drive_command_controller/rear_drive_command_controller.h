@@ -1,7 +1,7 @@
 /**
  * @file rear_drive_command_controller.h
  * @author Venkatavaradhan Vembanoor Lakshmi Narayanan (venkatavaradhan93@gmail.com)
- * @brief A basic robot's rear drive command controller class
+ * @brief A class for basic robot's rear drive command controller
  * @version 0.1
  * @date 2020-05-10
  * @copyright Copyright (c) 2020
@@ -22,7 +22,7 @@
 namespace rear_drive_command_controller
 {
     /**
-     * @brief A class for basic robot's rear drive command controller
+     * @brief A basic robot's rear drive command controller class
      */
     class RearDriveCommandController : public controller_interface::Controller<hardware_interface::RearDriveCommandInterface>
     {

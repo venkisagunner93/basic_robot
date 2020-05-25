@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../structState.html#a89572abb38dea3b1a780ede589a2d59b',1,'State']]]
+  ['std_5fdev',['std_dev',['../structNoiseParameters.html#a5374d40ef231b5ee1d36a3130766174a',1,'NoiseParameters']]]
 ];

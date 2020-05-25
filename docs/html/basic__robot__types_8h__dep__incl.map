@@ -1,8 +1,10 @@
 <map id="basic_robot/include/basic_robot/basic_robot_types.h" name="basic_robot/include/basic_robot/basic_robot_types.h">
-<area shape="rect" id="node2" href="$basic__robot_8h.html" title="A file for basic robot&#39;s header files. " alt="" coords="375,199,550,240"/>
-<area shape="rect" id="node7" href="$kinematics_8h.html" title="A class for basic robot&#39;s kinematics. " alt="" coords="500,109,647,151"/>
-<area shape="rect" id="node3" href="$planner_8h.html" title="A class for basic robot&#39;s navigation. " alt="" coords="5,303,160,344"/>
-<area shape="rect" id="node4" href="$simulation_8h.html" title="A class for basic robot&#39;s simulation. " alt="" coords="185,303,343,344"/>
-<area shape="rect" id="node5" href="$rear__drive__state__controller_8h.html" title="A basic robot&#39;s rear drive state controller class. " alt="" coords="367,288,558,359"/>
-<area shape="rect" id="node6" href="$rear__drive__command__controller_8h.html" title="A basic robot&#39;s rear drive command controller class. " alt="" coords="583,288,801,359"/>
+<area shape="rect" id="node2" href="$basic__robot_8h.html" title="A file for basic robot&#39;s header files. " alt="" coords="635,199,810,240"/>
+<area shape="rect" id="node9" href="$kinematics_8h.html" title="A class for basic robot&#39;s kinematics. " alt="" coords="760,109,907,151"/>
+<area shape="rect" id="node3" href="$rear__drive__state__controller_8h.html" title="A class for basic robot&#39;s rear drive state controller. " alt="" coords="249,288,439,359"/>
+<area shape="rect" id="node4" href="$rear__drive__command__controller_8h.html" title="A class for basic robot&#39;s rear drive command controller. " alt="" coords="5,288,224,359"/>
+<area shape="rect" id="node5" href="$front__steering__state__controller_8h.html" title="A class for basic robot&#39;s front steering state controller. " alt="" coords="826,288,1038,359"/>
+<area shape="rect" id="node6" href="$front__steering__command__controller_8h.html" title="A class for basic robot&#39;s front steering command controller. " alt="" coords="1063,288,1303,359"/>
+<area shape="rect" id="node7" href="$planner_8h.html" title="A class for basic robot&#39;s navigation. " alt="" coords="464,303,619,344"/>
+<area shape="rect" id="node8" href="$simulation_8h.html" title="A class for basic robot&#39;s simulation. " alt="" coords="643,303,802,344"/>
 </map>

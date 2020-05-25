@@ -1,7 +1,7 @@
 /**
  * @file rear_drive_command_interface.h
  * @author Venkatavaradhan Vembanoor Lakshmi Narayanan (venkatavaradhan93@gmail.com)
- * @brief A basic robot's rear drive command interface class
+ * @brief A class for basic robot's rear drive command
  * @version 0.1
  * @date 2020-05-10
  * @copyright Copyright (c) 2020
@@ -9,10 +9,6 @@
 
 #ifndef REAR_DRIVE_COMMAND_INTERFACE_H
 #define REAR_DRIVE_COMMAND_INTERFACE_H
-
-#include <hardware_interface/internal/hardware_resource_manager.h>
-#include <cassert>
-#include <string>
 
 #include "rear_drive_state_interface/rear_drive_state_interface.h"
 

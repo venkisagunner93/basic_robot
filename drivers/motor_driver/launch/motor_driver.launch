@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <rosparam file="$(find motor_driver)/config/parameters.yaml" command="load"/>
-
-    <node name="motor_sim" pkg="motor_driver" type="motor_sim" output="screen"/>
-    <node name="controller_spawner" pkg="controller_manager" type="controller_manager" ns="/" args="spawn rear_drive_state_controller rear_drive_command_controller" output="screen"/>
-</launch>

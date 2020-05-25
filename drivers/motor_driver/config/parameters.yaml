@@ -1,5 +1,0 @@
-rear_drive_state_controller:
-    type: rear_drive_state_controller/RearDriveStateController
-
-rear_drive_command_controller:
-    type: rear_drive_command_controller/RearDriveCommandController

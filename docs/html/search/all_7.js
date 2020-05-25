@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['planner',['Planner',['../classPlanner.html',1,'Planner'],['../classPlanner.html#a32475baddd401921adb1aab3ab842210',1,'Planner::Planner()']]],
-  ['planner_2eh',['planner.h',['../planner_8h.html',1,'']]],
-  ['printmap',['printMap',['../classMap.html#a1cefc1b8ed6692667e2019f64acc0f5a',1,'Map']]],
-  ['publishsetpoints',['publishSetpoints',['../classPlanner.html#a9fae9548d0458db1f30a1aa7d8b49acb',1,'Planner']]]
+  ['map',['Map',['../classMap.html',1,'Map'],['../classMap.html#a12306af718f86c34dad3873a67d64280',1,'Map::Map()']]],
+  ['map_2eh',['map.h',['../map_8h.html',1,'']]],
+  ['mean',['mean',['../structNoiseParameters.html#ac51a65e4d895c69eb68d62cabf647b5c',1,'NoiseParameters']]],
+  ['motion_5fcontrol_2eh',['motion_control.h',['../motion__control_8h.html',1,'']]],
+  ['motioncontrol',['MotionControl',['../classMotionControl.html',1,'MotionControl'],['../classMotionControl.html#ae59561bd3b5a703377c3d905d6bcf0ac',1,'MotionControl::MotionControl()']]]
 ];

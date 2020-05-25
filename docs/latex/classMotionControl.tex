@@ -1,0 +1,70 @@
+\hypertarget{classMotionControl}{}\section{Motion\+Control Class Reference}
+\label{classMotionControl}\index{Motion\+Control@{Motion\+Control}}
+
+
+A basic robot\textquotesingle{}s motion control class.  
+
+
+
+
+{\ttfamily \#include $<$motion\+\_\+control.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMotionControl_ae59561bd3b5a703377c3d905d6bcf0ac}{Motion\+Control} (const std\+::vector$<$ \hyperlink{classBasicRobotHW}{Basic\+Robot\+HW} $\ast$$>$ \&drivers)
+\begin{DoxyCompactList}\small\item\em Construct a new Motion Control instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMotionControl_af26ee6948d7b657d6cc9480f773e8958}\label{classMotionControl_af26ee6948d7b657d6cc9480f773e8958}} 
+void \hyperlink{classMotionControl_af26ee6948d7b657d6cc9480f773e8958}{read\+From\+HW} () const
+\begin{DoxyCompactList}\small\item\em A method to read from all hardware. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMotionControl_a2bddd1520df90b5f3cba6baa88256817}\label{classMotionControl_a2bddd1520df90b5f3cba6baa88256817}} 
+void \hyperlink{classMotionControl_a2bddd1520df90b5f3cba6baa88256817}{write\+To\+HW} () const
+\begin{DoxyCompactList}\small\item\em A method to write to all hardware. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMotionControl_a64d6dfbced6ac7e8bed6147d9b7c84d5}\label{classMotionControl_a64d6dfbced6ac7e8bed6147d9b7c84d5}} 
+void \hyperlink{classMotionControl_a64d6dfbced6ac7e8bed6147d9b7c84d5}{update\+Controllers} () const
+\begin{DoxyCompactList}\small\item\em A method to update all hardware controllers. \end{DoxyCompactList}\item 
+double \hyperlink{classMotionControl_aa54a9d8ce253dce201af950a2d7c12b5}{get\+Loop\+Rate} () const
+\begin{DoxyCompactList}\small\item\em Get the Loop Rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s motion control class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMotionControl_ae59561bd3b5a703377c3d905d6bcf0ac}\label{classMotionControl_ae59561bd3b5a703377c3d905d6bcf0ac}} 
+\index{Motion\+Control@{Motion\+Control}!Motion\+Control@{Motion\+Control}}
+\index{Motion\+Control@{Motion\+Control}!Motion\+Control@{Motion\+Control}}
+\subsubsection{\texorpdfstring{Motion\+Control()}{MotionControl()}}
+{\footnotesize\ttfamily Motion\+Control\+::\+Motion\+Control (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{classBasicRobotHW}{Basic\+Robot\+HW} $\ast$$>$ \&}]{drivers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new Motion Control instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drivers} & -\/ A vector of drivers used for motion control \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMotionControl_aa54a9d8ce253dce201af950a2d7c12b5}\label{classMotionControl_aa54a9d8ce253dce201af950a2d7c12b5}} 
+\index{Motion\+Control@{Motion\+Control}!get\+Loop\+Rate@{get\+Loop\+Rate}}
+\index{get\+Loop\+Rate@{get\+Loop\+Rate}!Motion\+Control@{Motion\+Control}}
+\subsubsection{\texorpdfstring{get\+Loop\+Rate()}{getLoopRate()}}
+{\footnotesize\ttfamily double Motion\+Control\+::get\+Loop\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Loop Rate. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+motion\+\_\+control/include/motion\+\_\+control/\hyperlink{motion__control_8h}{motion\+\_\+control.\+h}\item 
+motion\+\_\+control/src/motion\+\_\+control.\+cpp\end{DoxyCompactItemize}

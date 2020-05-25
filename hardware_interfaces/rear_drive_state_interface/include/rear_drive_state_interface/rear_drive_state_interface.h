@@ -1,7 +1,7 @@
 /**
  * @file rear_drive_state_interface.h
  * @author Venkatavaradhan Vembanoor Lakshmi Narayanan (venkatavaradhan93@gmail.com)
- * @brief A basic robot's rear drive state interface class
+ * @brief A class for basic robot's rear drive state
  * @version 0.1
  * @date 2020-05-10
  * @copyright Copyright (c) 2020
