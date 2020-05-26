@@ -1,29 +1,23 @@
-\hypertarget{basic__robot__sim_8h}{}\section{motion\+\_\+control/include/motion\+\_\+control/sim/basic\+\_\+robot\+\_\+sim.h File Reference}
-\label{basic__robot__sim_8h}\index{motion\+\_\+control/include/motion\+\_\+control/sim/basic\+\_\+robot\+\_\+sim.\+h@{motion\+\_\+control/include/motion\+\_\+control/sim/basic\+\_\+robot\+\_\+sim.\+h}}
+\hypertarget{basic__robot__sim_8h}{}\section{motion\+\_\+control/include/motion\+\_\+control/basic\+\_\+robot\+\_\+sim.h File Reference}
+\label{basic__robot__sim_8h}\index{motion\+\_\+control/include/motion\+\_\+control/basic\+\_\+robot\+\_\+sim.\+h@{motion\+\_\+control/include/motion\+\_\+control/basic\+\_\+robot\+\_\+sim.\+h}}
 
 
-A class for basic robot simulation.  
+A class for basic robot\textquotesingle{}s simulation.  
 
 
-{\ttfamily \#include $<$hardware\+\_\+interface/robot\+\_\+hw.\+h$>$}\newline
-{\ttfamily \#include \char`\"{}rear\+\_\+drive\+\_\+command\+\_\+interface/rear\+\_\+drive\+\_\+command\+\_\+interface.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}rear\+\_\+drive\+\_\+state\+\_\+interface/rear\+\_\+drive\+\_\+state\+\_\+interface.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}front\+\_\+steering\+\_\+command\+\_\+interface/front\+\_\+steering\+\_\+command\+\_\+interface.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}front\+\_\+steering\+\_\+state\+\_\+interface/front\+\_\+steering\+\_\+state\+\_\+interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$tf2/\+Linear\+Math/\+Quaternion.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/transform\+\_\+broadcaster.\+h$>$}\newline
+{\ttfamily \#include $<$geometry\+\_\+msgs/\+Transform\+Stamped.\+h$>$}\newline
+{\ttfamily \#include $<$boost/chrono/chrono.\+hpp$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include \char`\"{}basic\+\_\+robot/basic\+\_\+robot.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}motion\+\_\+control/basic\+\_\+robot\+\_\+base.\+h\char`\"{}}\newline
 Include dependency graph for basic\+\_\+robot\+\_\+sim.\+h\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{basic__robot__sim_8h__incl}
-\end{center}
-\end{figure}
-This graph shows which files directly or indirectly include this file\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=346pt]{basic__robot__sim_8h__dep__incl}
 \end{center}
 \end{figure}
 \subsection*{Classes}
@@ -34,7 +28,7 @@ class \hyperlink{classBasicRobotSim}{Basic\+Robot\+Sim}
 
 
 \subsection{Detailed Description}
-A class for basic robot simulation. 
+A class for basic robot\textquotesingle{}s simulation. 
 
 \begin{DoxyAuthor}{Author}
 Venkatavaradhan Vembanoor Lakshmi Narayanan (\href{mailto:venkatavaradhan93@gmail.com}{\tt venkatavaradhan93@gmail.\+com}) 

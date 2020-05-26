@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['getlooprate',['getLoopRate',['../classMotionControl.html#aa54a9d8ce253dce201af950a2d7c12b5',1,'MotionControl']]],
   ['getname',['getName',['../classhardware__interface_1_1RearDriveStateHandle.html#a0997cace8fbf80dd1463f4d24f1306b9',1,'hardware_interface::RearDriveStateHandle::getName()'],['../classhardware__interface_1_1FrontSteeringStateHandle.html#af3e7e4b83211f176051cad32b5640654',1,'hardware_interface::FrontSteeringStateHandle::getName()']]],
   ['getposition',['getPosition',['../classhardware__interface_1_1RearDriveStateHandle.html#a685188a6227b2b8abadfd94e2ba4bd2c',1,'hardware_interface::RearDriveStateHandle']]],
   ['getpositionptr',['getPositionPtr',['../classhardware__interface_1_1RearDriveStateHandle.html#ab2441941201b3468861c582b06a4df96',1,'hardware_interface::RearDriveStateHandle']]],

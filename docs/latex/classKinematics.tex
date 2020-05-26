@@ -26,7 +26,11 @@ void \hyperlink{classKinematics_aee778602a6079e9ac4db804b6b3e4547}{set\+Robot\+D
 \hyperlink{structFrontWheel}{Front\+Wheel} \hyperlink{classKinematics_af5e5528ca44f82edae99025410595a36}{compute\+Front\+Wheel\+Hub\+Angles} (const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
 \begin{DoxyCompactList}\small\item\em A method to compute front wheel hub angles. \end{DoxyCompactList}\item 
 \hyperlink{structRearWheel}{Rear\+Wheel} \hyperlink{classKinematics_ac2733720e49bcd20662e74ea9334a878}{compute\+Rear\+Wheel\+Velocities} (const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&control\+\_\+input)
-\begin{DoxyCompactList}\small\item\em A method to compute rear wheel velocities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A method to compute rear wheel velocities. \end{DoxyCompactList}\item 
+double \hyperlink{classKinematics_a7159c40fdd982621f5def3e8aeb5687d}{compute\+Velocity} (const std\+::vector$<$ double $>$ \&wheel\+\_\+velocities)
+\begin{DoxyCompactList}\small\item\em A method to compute velocity from individual rear wheel velocities. \end{DoxyCompactList}\item 
+double \hyperlink{classKinematics_a333f2e56be9d8eda2ff9ed4217dac860}{compute\+Heading} (const std\+::vector$<$ double $>$ \&hub\+\_\+angles)
+\begin{DoxyCompactList}\small\item\em A method to compute heading from individual front hub angles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -69,6 +73,24 @@ A method to compute front wheel hub angles.
 \begin{DoxyReturn}{Returns}
 \hyperlink{structFrontWheel}{Front\+Wheel} -\/ Steering angles of the front wheels 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classKinematics_a333f2e56be9d8eda2ff9ed4217dac860}\label{classKinematics_a333f2e56be9d8eda2ff9ed4217dac860}} 
+\index{Kinematics@{Kinematics}!compute\+Heading@{compute\+Heading}}
+\index{compute\+Heading@{compute\+Heading}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{compute\+Heading()}{computeHeading()}}
+{\footnotesize\ttfamily double Kinematics\+::compute\+Heading (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{hub\+\_\+angles }\end{DoxyParamCaption})}
+
+
+
+A method to compute heading from individual front hub angles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hub\+\_\+angles} & -\/ Individual front wheel hub angles \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ Basic robot\textquotesingle{}s heading 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classKinematics_ac2733720e49bcd20662e74ea9334a878}\label{classKinematics_ac2733720e49bcd20662e74ea9334a878}} 
 \index{Kinematics@{Kinematics}!compute\+Rear\+Wheel\+Velocities@{compute\+Rear\+Wheel\+Velocities}}
 \index{compute\+Rear\+Wheel\+Velocities@{compute\+Rear\+Wheel\+Velocities}!Kinematics@{Kinematics}}
@@ -104,6 +126,24 @@ A method to compute new states of the system.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 \hyperlink{structState}{State} -\/ \hyperlink{structState}{State} of the system computed using kinematics 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classKinematics_a7159c40fdd982621f5def3e8aeb5687d}\label{classKinematics_a7159c40fdd982621f5def3e8aeb5687d}} 
+\index{Kinematics@{Kinematics}!compute\+Velocity@{compute\+Velocity}}
+\index{compute\+Velocity@{compute\+Velocity}!Kinematics@{Kinematics}}
+\subsubsection{\texorpdfstring{compute\+Velocity()}{computeVelocity()}}
+{\footnotesize\ttfamily double Kinematics\+::compute\+Velocity (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{wheel\+\_\+velocities }\end{DoxyParamCaption})}
+
+
+
+A method to compute velocity from individual rear wheel velocities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wheel\+\_\+velocities} & -\/ Individual rear wheel velocities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double -\/ Basic robot\textquotesingle{}s velocity 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classKinematics_a8f16185dd4942d6423d3ac4997de839f}\label{classKinematics_a8f16185dd4942d6423d3ac4997de839f}} 
 \index{Kinematics@{Kinematics}!get\+Robot\+Dimensions@{get\+Robot\+Dimensions}}

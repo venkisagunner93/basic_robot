@@ -1,4 +1,3 @@
 <map id="BasicRobotHW" name="BasicRobotHW">
-<area shape="rect" id="node3" href="$classFrontSteeringHW.html" title="A basic robot&#39;s front steering hardware class. " alt="" coords="5,155,128,181"/>
-<area shape="rect" id="node4" href="$classRearDriveHW.html" title="A basic robot&#39;s rear drive hardware class. " alt="" coords="152,155,256,181"/>
+<area shape="rect" id="node2" href="$classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="11,95,131,121"/>
 </map>

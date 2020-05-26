@@ -1,28 +1,23 @@
-#include "motion_control/motion_control.h"
+#include <controller_manager/controller_manager.h>
+#include "motion_control/basic_robot_sim.h"
 
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "motion_control_sim");
-    ros::NodeHandle nh;  
+    ros::NodeHandle nh;
 
-    std::vector<BasicRobotSim*> sim;
-    RearDriveSim rear_drive_sim;
-    FrontSteeringSim front_steering_sim;
-    
-    sim.push_back(&rear_drive_sim);
-    sim.push_back(&front_steering_sim);
+    BasicRobotSim sim;
+    controller_manager::ControllerManager cm(&sim);
 
-    MotionControl motion_control(sim);
-
-    ros::AsyncSpinner spinner(1);
+    ros::AsyncSpinner spinner(2);
     spinner.start();
 
     while (ros::ok())
     {
-        motion_control.read();
-        motion_control.updateControllers();
-        motion_control.write();
-        ros::Duration(motion_control.getLoopRate()).sleep();
+        sim.read(ros::Time::now(), ros::Duration(1));
+        cm.update(ros::Time::now(), ros::Duration(1));
+        sim.write(ros::Time::now(), ros::Duration(1));
+        ros::Duration(0.01).sleep();
     }
 
     spinner.stop();

@@ -95,6 +95,12 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:ac2733720e49bcd20662e74ea9334a878"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRearWheel.html">RearWheel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#ac2733720e49bcd20662e74ea9334a878">computeRearWheelVelocities</a> (const ackermann_msgs::AckermannDriveStamped &amp;control_input)</td></tr>
 <tr class="memdesc:ac2733720e49bcd20662e74ea9334a878"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute rear wheel velocities.  <a href="#ac2733720e49bcd20662e74ea9334a878">More...</a><br /></td></tr>
 <tr class="separator:ac2733720e49bcd20662e74ea9334a878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7159c40fdd982621f5def3e8aeb5687d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#a7159c40fdd982621f5def3e8aeb5687d">computeVelocity</a> (const std::vector&lt; double &gt; &amp;wheel_velocities)</td></tr>
+<tr class="memdesc:a7159c40fdd982621f5def3e8aeb5687d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute velocity from individual rear wheel velocities.  <a href="#a7159c40fdd982621f5def3e8aeb5687d">More...</a><br /></td></tr>
+<tr class="separator:a7159c40fdd982621f5def3e8aeb5687d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333f2e56be9d8eda2ff9ed4217dac860"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKinematics.html#a333f2e56be9d8eda2ff9ed4217dac860">computeHeading</a> (const std::vector&lt; double &gt; &amp;hub_angles)</td></tr>
+<tr class="memdesc:a333f2e56be9d8eda2ff9ed4217dac860"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method to compute heading from individual front hub angles.  <a href="#a333f2e56be9d8eda2ff9ed4217dac860">More...</a><br /></td></tr>
+<tr class="separator:a333f2e56be9d8eda2ff9ed4217dac860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A basic robot's kinematics class. </p>
@@ -153,6 +159,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
+<a id="a333f2e56be9d8eda2ff9ed4217dac860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a333f2e56be9d8eda2ff9ed4217dac860">&#9670;&nbsp;</a></span>computeHeading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Kinematics::computeHeading </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>hub_angles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to compute heading from individual front hub angles. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hub_angles</td><td>- Individual front wheel hub angles </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double - Basic robot's heading </dd></dl>
+
+</div>
+</div>
 <a id="ac2733720e49bcd20662e74ea9334a878"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2733720e49bcd20662e74ea9334a878">&#9670;&nbsp;</a></span>computeRearWheelVelocities()</h2>
 
@@ -204,6 +237,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structState.html" title="A struct to represent the robot state. ">State</a> - <a class="el" href="structState.html" title="A struct to represent the robot state. ">State</a> of the system computed using kinematics </dd></dl>
+
+</div>
+</div>
+<a id="a7159c40fdd982621f5def3e8aeb5687d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7159c40fdd982621f5def3e8aeb5687d">&#9670;&nbsp;</a></span>computeVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Kinematics::computeVelocity </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wheel_velocities</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method to compute velocity from individual rear wheel velocities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wheel_velocities</td><td>- Individual rear wheel velocities </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double - Basic robot's velocity </dd></dl>
 
 </div>
 </div>

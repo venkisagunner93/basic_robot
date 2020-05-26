@@ -28,7 +28,7 @@ namespace front_steering_state_controller
     {
         public:
             /**
-             * @brief Construct a new Front Drive State Controller object
+             * @brief Construct a new Front Steering State Controller object
              */
             FrontSteeringStateController();
             /**
@@ -62,22 +62,18 @@ namespace front_steering_state_controller
              */
             std::vector<hardware_interface::FrontSteeringStateHandle> front_steering_state_handle_;
             /**
-             * @brief Control Input for the system
-             */
-            ackermann_msgs::AckermannDriveStamped control_input_;
-            /**
              * @brief Basic robot's kinematics instance
              */
             Kinematics kinematics_;
             /**
-             * @brief ROS Subscriber for base/cmd_vel topic
+             * @brief Real time publisher for heading feedback
              */
-            ros::Subscriber cmd_vel_subscriber_;
+            std::shared_ptr<realtime_tools::RealtimePublisher<ackermann_msgs::AckermannDriveStamped>> heading_feedback_publisher_;
             /**
-             * @brief A callback method for cmd_vel subscriber
-             * @param msg - Ackermann drive message
+             * @brief A method to publish heading feedback from front steering
+             * @param msg - Feedback message from rear drive
              */
-            void cmdVelCallback(const ackermann_msgs::AckermannDriveStamped& msg);
+            void publishHeadingFeedback(const ackermann_msgs::AckermannDriveStamped& msg) const;
     };
 }
 

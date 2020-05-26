@@ -19,7 +19,7 @@ bool FrontSteeringCommandController::init(hardware_interface::FrontSteeringComma
         ROS_INFO_STREAM("[Front Steering Command Controller]: " << joint_names[i].c_str() << " joint created");
     }
 
-    cmd_vel_subscriber_ = nh.subscribe("base/cmd_vel", 100, &FrontSteeringCommandController::cmdVelCallback, this);
+    cmd_vel_subscriber_ = nh.subscribe("/base/cmd_vel", 100, &FrontSteeringCommandController::cmdVelCallback, this);
 
     return true;
 }
@@ -27,18 +27,9 @@ bool FrontSteeringCommandController::init(hardware_interface::FrontSteeringComma
 void FrontSteeringCommandController::update(const ros::Time& time, const ros::Duration& period)
 {
     FrontWheel front_wheel = kinematics_.computeFrontWheelHubAngles(control_input_);
-    
-    for(unsigned int i = 0; i < front_steering_command_handle_.size(); i++)
-    {
-        if(front_steering_command_handle_[i].getName() == "left_hub")
-        {
-            front_steering_command_handle_[i].setWheelAngle(front_wheel.left_hub_angle);
-        }
-        else if(front_steering_command_handle_[i].getName() == "right_hub")
-        {
-            front_steering_command_handle_[i].setWheelAngle(front_wheel.right_hub_angle);
-        }
-    }
+
+    front_steering_command_handle_[0].setWheelAngle(front_wheel.left_hub_angle);
+    front_steering_command_handle_[1].setWheelAngle(front_wheel.right_hub_angle);
 }
 
 void FrontSteeringCommandController::cmdVelCallback(const ackermann_msgs::AckermannDriveStamped& msg)

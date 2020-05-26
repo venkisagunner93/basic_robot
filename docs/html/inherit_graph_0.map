@@ -1,8 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classRearDriveHW.html" title="A basic robot&#39;s rear drive hardware class. " alt="" coords="5,5,109,32"/>
-<area shape="rect" id="node2" href="$classBasicRobotHW.html" title="A basic robot&#39;s hardware class. " alt="" coords="157,5,271,32"/>
-<area shape="rect" id="node4" href="$classBasicRobotSim.html" title="A basic robot&#39;s simulation class. " alt="" coords="157,56,271,83"/>
-<area shape="rect" id="node3" href="$classFrontSteeringHW.html" title="A basic robot&#39;s front steering hardware class. " alt="" coords="319,5,441,32"/>
-<area shape="rect" id="node5" href="$classFrontSteeringSim.html" title="A basic robot&#39;s front steering simulation class. " alt="" coords="319,56,441,83"/>
-<area shape="rect" id="node6" href="$classRearDriveSim.html" title="A basic robot&#39;s rear drive simulation class. " alt="" coords="328,107,432,133"/>
+<area shape="rect" id="node1" href="$classBasicRobotSim.html" title="A basic robot&#39;s simulation class. " alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node2" href="$classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="167,5,287,32"/>
+<area shape="rect" id="node3" href="$classBasicRobotHW.html" title="A basic robot&#39;s hardware class. " alt="" coords="335,5,448,32"/>
 </map>

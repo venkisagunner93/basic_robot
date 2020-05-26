@@ -59,6 +59,18 @@ class Kinematics
          * @return RearWheel - Rear wheel differential velocities
          */
         RearWheel computeRearWheelVelocities(const ackermann_msgs::AckermannDriveStamped& control_input);
+        /**
+         * @brief A method to compute velocity from individual rear wheel velocities
+         * @param wheel_velocities - Individual rear wheel velocities
+         * @return double - Basic robot's velocity
+         */
+        double computeVelocity(const std::vector<double>& wheel_velocities);
+        /**
+         * @brief A method to compute heading from individual front hub angles
+         * @param hub_angles - Individual front wheel hub angles
+         * @return double - Basic robot's heading
+         */
+        double computeHeading(const std::vector<double>& hub_angles);
 
     private:
         /**

@@ -60,7 +60,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classBasicRobotSim-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">BasicRobotSim Class Reference</div>  </div>
@@ -76,8 +75,7 @@ Inheritance diagram for BasicRobotSim:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBasicRobotSim__inherit__graph.png" border="0" usemap="#BasicRobotSim_inherit__map" alt="Inheritance graph"/></div>
 <map name="BasicRobotSim_inherit__map" id="BasicRobotSim_inherit__map">
-<area shape="rect" id="node3" href="classFrontSteeringSim.html" title="A basic robot&#39;s front steering simulation class. " alt="" coords="5,169,128,196"/>
-<area shape="rect" id="node4" href="classRearDriveSim.html" title="A basic robot&#39;s rear drive simulation class. " alt="" coords="152,169,256,196"/>
+<area shape="rect" id="node2" href="classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="11,95,131,121"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -85,54 +83,57 @@ Collaboration diagram for BasicRobotSim:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBasicRobotSim__coll__graph.png" border="0" usemap="#BasicRobotSim_coll__map" alt="Collaboration graph"/></div>
 <map name="BasicRobotSim_coll__map" id="BasicRobotSim_coll__map">
+<area shape="rect" id="node2" href="classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="11,95,131,121"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8609903f149d0af379695b3c61fc1b9c"><td class="memItemLeft" align="right" valign="top"><a id="a8609903f149d0af379695b3c61fc1b9c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a8609903f149d0af379695b3c61fc1b9c">BasicRobotSim</a> ()</td></tr>
-<tr class="memdesc:a8609903f149d0af379695b3c61fc1b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Basic Robot Sim instance. <br /></td></tr>
-<tr class="separator:a8609903f149d0af379695b3c61fc1b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e6a778a8f79818f01dcf0211a3b8e3f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a8e6a778a8f79818f01dcf0211a3b8e3f">read</a> (const ros::Time &amp;time, const ros::Duration &amp;period) override</td></tr>
-<tr class="memdesc:a8e6a778a8f79818f01dcf0211a3b8e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual function for reading from front steering simulation.  <a href="#a8e6a778a8f79818f01dcf0211a3b8e3f">More...</a><br /></td></tr>
-<tr class="separator:a8e6a778a8f79818f01dcf0211a3b8e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa05ea705c931dacabb1e47d9ebab3174"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#aa05ea705c931dacabb1e47d9ebab3174">write</a> (const ros::Time &amp;time, const ros::Duration &amp;period) override</td></tr>
-<tr class="memdesc:aa05ea705c931dacabb1e47d9ebab3174"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual function for writing to front steering simulation.  <a href="#aa05ea705c931dacabb1e47d9ebab3174">More...</a><br /></td></tr>
-<tr class="separator:aa05ea705c931dacabb1e47d9ebab3174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074eed2efbdc51b211f62ac668706237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a074eed2efbdc51b211f62ac668706237">read</a> (const ros::Time &amp;time, const ros::Duration &amp;period)</td></tr>
+<tr class="memdesc:a074eed2efbdc51b211f62ac668706237"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for reading from simulation.  <a href="#a074eed2efbdc51b211f62ac668706237">More...</a><br /></td></tr>
+<tr class="separator:a074eed2efbdc51b211f62ac668706237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0efb3d3e006cd5c233e2e273d89e06f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a0efb3d3e006cd5c233e2e273d89e06f6">write</a> (const ros::Time &amp;time, const ros::Duration &amp;period)</td></tr>
+<tr class="memdesc:a0efb3d3e006cd5c233e2e273d89e06f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for writing to simulation.  <a href="#a0efb3d3e006cd5c233e2e273d89e06f6">More...</a><br /></td></tr>
+<tr class="separator:a0efb3d3e006cd5c233e2e273d89e06f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classBasicRobotBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBasicRobotBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBasicRobotBase.html">BasicRobotBase</a></td></tr>
+<tr class="memitem:a394ebe25d0c3292f7d9835a84d685a86 inherit pub_methods_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a394ebe25d0c3292f7d9835a84d685a86"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#a394ebe25d0c3292f7d9835a84d685a86">BasicRobotBase</a> ()</td></tr>
+<tr class="memdesc:a394ebe25d0c3292f7d9835a84d685a86 inherit pub_methods_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Basic Robot Base instance. <br /></td></tr>
+<tr class="separator:a394ebe25d0c3292f7d9835a84d685a86 inherit pub_methods_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ad6401472a3ca72298fedfb7a35c57ca5"><td class="memItemLeft" align="right" valign="top"><a id="ad6401472a3ca72298fedfb7a35c57ca5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#ad6401472a3ca72298fedfb7a35c57ca5">position_feedback_</a> [2]</td></tr>
-<tr class="memdesc:ad6401472a3ca72298fedfb7a35c57ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position feedback array. <br /></td></tr>
-<tr class="separator:ad6401472a3ca72298fedfb7a35c57ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7388b862cb3c8d56c78a5eda6fe2acc6"><td class="memItemLeft" align="right" valign="top"><a id="a7388b862cb3c8d56c78a5eda6fe2acc6"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a7388b862cb3c8d56c78a5eda6fe2acc6">velocity_feedback_</a> [2]</td></tr>
-<tr class="memdesc:a7388b862cb3c8d56c78a5eda6fe2acc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity feedback array. <br /></td></tr>
-<tr class="separator:a7388b862cb3c8d56c78a5eda6fe2acc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fafb5a6015b915bd3ba9de35f9c1a8d"><td class="memItemLeft" align="right" valign="top"><a id="a9fafb5a6015b915bd3ba9de35f9c1a8d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a9fafb5a6015b915bd3ba9de35f9c1a8d">position_command_</a> [2]</td></tr>
-<tr class="memdesc:a9fafb5a6015b915bd3ba9de35f9c1a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position command array. <br /></td></tr>
-<tr class="separator:a9fafb5a6015b915bd3ba9de35f9c1a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a679a476e5c6e125a91316f4acaf53c24"><td class="memItemLeft" align="right" valign="top"><a id="a679a476e5c6e125a91316f4acaf53c24"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a679a476e5c6e125a91316f4acaf53c24">velocity_command_</a> [2]</td></tr>
-<tr class="memdesc:a679a476e5c6e125a91316f4acaf53c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity command array. <br /></td></tr>
-<tr class="separator:a679a476e5c6e125a91316f4acaf53c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885d1e8d5034e7f8a81d8ed0e1f5e5cc"><td class="memItemLeft" align="right" valign="top"><a id="a885d1e8d5034e7f8a81d8ed0e1f5e5cc"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#a885d1e8d5034e7f8a81d8ed0e1f5e5cc">wheel_angle_feedback_</a> [2]</td></tr>
-<tr class="memdesc:a885d1e8d5034e7f8a81d8ed0e1f5e5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheel angle feedback array. <br /></td></tr>
-<tr class="separator:a885d1e8d5034e7f8a81d8ed0e1f5e5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab454fb6e5feb31ae880e8efc3788f626"><td class="memItemLeft" align="right" valign="top"><a id="ab454fb6e5feb31ae880e8efc3788f626"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotSim.html#ab454fb6e5feb31ae880e8efc3788f626">wheel_angle_command_</a> [2]</td></tr>
-<tr class="memdesc:ab454fb6e5feb31ae880e8efc3788f626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheel angle command array. <br /></td></tr>
-<tr class="separator:ab454fb6e5feb31ae880e8efc3788f626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classBasicRobotBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classBasicRobotBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classBasicRobotBase.html">BasicRobotBase</a></td></tr>
+<tr class="memitem:aef35beaa1cd991f92f37284592d4291a inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="aef35beaa1cd991f92f37284592d4291a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#aef35beaa1cd991f92f37284592d4291a">position_feedback_</a> [2]</td></tr>
+<tr class="memdesc:aef35beaa1cd991f92f37284592d4291a inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position feedback array. <br /></td></tr>
+<tr class="separator:aef35beaa1cd991f92f37284592d4291a inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed94fb8763d194c50a9205ce87a9835 inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a1ed94fb8763d194c50a9205ce87a9835"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#a1ed94fb8763d194c50a9205ce87a9835">velocity_feedback_</a> [2]</td></tr>
+<tr class="memdesc:a1ed94fb8763d194c50a9205ce87a9835 inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity feedback array. <br /></td></tr>
+<tr class="separator:a1ed94fb8763d194c50a9205ce87a9835 inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6787dcb8e9ae5c2b7ce32d51be345ab8 inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a6787dcb8e9ae5c2b7ce32d51be345ab8"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#a6787dcb8e9ae5c2b7ce32d51be345ab8">position_command_</a> [2]</td></tr>
+<tr class="memdesc:a6787dcb8e9ae5c2b7ce32d51be345ab8 inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position command array. <br /></td></tr>
+<tr class="separator:a6787dcb8e9ae5c2b7ce32d51be345ab8 inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfae1f09cb2980e75c3c64543a4defaa inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="acfae1f09cb2980e75c3c64543a4defaa"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#acfae1f09cb2980e75c3c64543a4defaa">velocity_command_</a> [2]</td></tr>
+<tr class="memdesc:acfae1f09cb2980e75c3c64543a4defaa inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity command array. <br /></td></tr>
+<tr class="separator:acfae1f09cb2980e75c3c64543a4defaa inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab109be7db265c92ad8e760c3d8dd6c1c inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="ab109be7db265c92ad8e760c3d8dd6c1c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#ab109be7db265c92ad8e760c3d8dd6c1c">wheel_angle_feedback_</a> [2]</td></tr>
+<tr class="memdesc:ab109be7db265c92ad8e760c3d8dd6c1c inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheel angle feedback array. <br /></td></tr>
+<tr class="separator:ab109be7db265c92ad8e760c3d8dd6c1c inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae960e122456704d3319c404bb1d88c6b inherit pro_attribs_classBasicRobotBase"><td class="memItemLeft" align="right" valign="top"><a id="ae960e122456704d3319c404bb1d88c6b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBasicRobotBase.html#ae960e122456704d3319c404bb1d88c6b">wheel_angle_command_</a> [2]</td></tr>
+<tr class="memdesc:ae960e122456704d3319c404bb1d88c6b inherit pro_attribs_classBasicRobotBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wheel angle command array. <br /></td></tr>
+<tr class="separator:ae960e122456704d3319c404bb1d88c6b inherit pro_attribs_classBasicRobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A basic robot's simulation class. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8e6a778a8f79818f01dcf0211a3b8e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e6a778a8f79818f01dcf0211a3b8e3f">&#9670;&nbsp;</a></span>read()</h2>
+<a id="a074eed2efbdc51b211f62ac668706237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074eed2efbdc51b211f62ac668706237">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,12 +161,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A virtual function for reading from front steering simulation. </p>
+<p>A method for reading from simulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time</td><td>- Current time </td></tr>
@@ -174,12 +175,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classFrontSteeringSim.html#ac9eceb29112f8238e344cd467fae9814">FrontSteeringSim</a>, and <a class="el" href="classRearDriveSim.html#a663d8885fa61436bdd1112b14f2c5a31">RearDriveSim</a>.</p>
+<p>Reimplemented from <a class="el" href="classBasicRobotBase.html#a64bb2c7bed72e98fb62a37d6beb4fe5a">BasicRobotBase</a>.</p>
 
 </div>
 </div>
-<a id="aa05ea705c931dacabb1e47d9ebab3174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa05ea705c931dacabb1e47d9ebab3174">&#9670;&nbsp;</a></span>write()</h2>
+<a id="a0efb3d3e006cd5c233e2e273d89e06f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0efb3d3e006cd5c233e2e273d89e06f6">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,12 +208,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>A virtual function for writing to front steering simulation. </p>
+<p>A method for writing to simulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time</td><td>- Current time </td></tr>
@@ -221,13 +222,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classFrontSteeringSim.html#afbf1c3df92319f90d5019729e9067585">FrontSteeringSim</a>, and <a class="el" href="classRearDriveSim.html#a814f528a26c9dcf0b0d3490883abb2d2">RearDriveSim</a>.</p>
+<p>Reimplemented from <a class="el" href="classBasicRobotBase.html#afbc6ef4347fc05e053391692a9e1bc24">BasicRobotBase</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>motion_control/include/motion_control/sim/<a class="el" href="basic__robot__sim_8h_source.html">basic_robot_sim.h</a></li>
-<li>motion_control/src/sim/basic_robot_sim.cpp</li>
+<li>motion_control/include/motion_control/<a class="el" href="basic__robot__sim_8h_source.html">basic_robot_sim.h</a></li>
+<li>motion_control/src/basic_robot_sim.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

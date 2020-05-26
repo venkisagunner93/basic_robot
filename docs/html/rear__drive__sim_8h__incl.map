@@ -1,5 +1,5 @@
 <map id="motion_control/include/motion_control/sim/rear_drive_sim.h" name="motion_control/include/motion_control/sim/rear_drive_sim.h">
-<area shape="rect" id="node2" href="$basic__robot__sim_8h.html" title="A class for basic robot simulation. " alt="" coords="288,109,420,151"/>
+<area shape="rect" id="node2" href="$basic__robot__base_8h.html" title="A class for basic robot&#39;s base. " alt="" coords="283,109,425,151"/>
 <area shape="rect" id="node4" href="$rear__drive__command__interface_8h.html" title="A class for basic robot&#39;s rear drive command. " alt="" coords="162,199,317,255"/>
 <area shape="rect" id="node5" href="$rear__drive__state__interface_8h.html" title="A class for basic robot&#39;s rear drive state. " alt="" coords="221,310,407,351"/>
 <area shape="rect" id="node9" href="$front__steering__command__interface_8h.html" title="A class for basic robot&#39;s front steering command. " alt="" coords="391,199,557,255"/>

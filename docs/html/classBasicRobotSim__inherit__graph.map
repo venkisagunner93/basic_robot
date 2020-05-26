@@ -1,4 +1,3 @@
 <map id="BasicRobotSim" name="BasicRobotSim">
-<area shape="rect" id="node3" href="$classFrontSteeringSim.html" title="A basic robot&#39;s front steering simulation class. " alt="" coords="5,169,128,196"/>
-<area shape="rect" id="node4" href="$classRearDriveSim.html" title="A basic robot&#39;s rear drive simulation class. " alt="" coords="152,169,256,196"/>
+<area shape="rect" id="node2" href="$classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="11,95,131,121"/>
 </map>

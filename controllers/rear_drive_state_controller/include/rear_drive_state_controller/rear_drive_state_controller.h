@@ -27,6 +27,10 @@ namespace rear_drive_state_controller
     {
         public:
             /**
+             * @brief Construct a new Rear Drive State Controller object
+             */
+            RearDriveStateController();
+            /**
              * @brief A method to initialize rear drive state controller plugin
              * @param hw - Rear drive state interface instance
              * @param nh - ROS NodeHandle for communications
@@ -56,6 +60,10 @@ namespace rear_drive_state_controller
              * @brief Vector of rear drive HW interface state handle
              */
             std::vector<hardware_interface::RearDriveStateHandle> rear_drive_state_handle_;
+            /**
+             * @brief Basic robot's kinematics instance
+             */
+            Kinematics kinematics_;
             /**
              * @brief Real time publisher for velocity feedback
              */

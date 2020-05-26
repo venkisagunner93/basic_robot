@@ -1,0 +1,6 @@
+<map id="motion_control/include/motion_control/basic_robot_base.h" name="motion_control/include/motion_control/basic_robot_base.h">
+<area shape="rect" id="node3" href="$rear__drive__command__interface_8h.html" title="A class for basic robot&#39;s rear drive command. " alt="" coords="162,109,317,165"/>
+<area shape="rect" id="node4" href="$rear__drive__state__interface_8h.html" title="A class for basic robot&#39;s rear drive state. " alt="" coords="221,221,407,262"/>
+<area shape="rect" id="node8" href="$front__steering__command__interface_8h.html" title="A class for basic robot&#39;s front steering command. " alt="" coords="391,109,557,165"/>
+<area shape="rect" id="node9" href="$front__steering__state__interface_8h.html" title="A class for basic robot&#39;s front steering state. " alt="" coords="431,213,594,269"/>
+</map>

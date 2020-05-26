@@ -26,7 +26,11 @@ bool RearDriveCommandController::init(hardware_interface::RearDriveCommandInterf
 
 void RearDriveCommandController::update(const ros::Time& time, const ros::Duration& period)
 {
-    kinematics_.computeRearWheelVelocities(control_input_);
+    RearWheel rear_wheel = kinematics_.computeRearWheelVelocities(control_input_);
+
+    rear_drive_command_handle_[0].setVelocity(rear_wheel.left_velocity);
+    rear_drive_command_handle_[1].setVelocity(rear_wheel.right_velocity);
+
 }
 
 void RearDriveCommandController::cmdVelCallback(const ackermann_msgs::AckermannDriveStamped& msg)

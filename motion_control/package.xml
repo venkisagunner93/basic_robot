@@ -8,18 +8,30 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>basic_robot</build_depend>
   <build_depend>controller_manager</build_depend>
-  <build_depend>motor_driver</build_depend>
+  <build_depend>rear_drive_state_interface</build_depend>
+  <build_depend>rear_drive_command_interface</build_depend>
   <build_depend>front_steering_state_interface</build_depend>
+  <build_depend>front_steering_command_interface</build_depend>
+  <build_depend>motor_driver</build_depend>
+  <build_depend>tf2_ros</build_depend>
   <build_depend>roscpp</build_depend>
   <build_export_depend>basic_robot</build_export_depend>
   <build_export_depend>controller_manager</build_export_depend>
-  <build_export_depend>motor_driver</build_export_depend>
+  <build_export_depend>rear_drive_state_interface</build_export_depend>
+  <build_export_depend>rear_drive_command_interface</build_export_depend>
   <build_export_depend>front_steering_state_interface</build_export_depend>
+  <build_export_depend>front_steering_command_interface</build_export_depend>
+  <build_export_depend>motor_driver</build_export_depend>
+  <build_export_depend>tf2_ros</build_export_depend>
   <build_export_depend>roscpp</build_export_depend>
   <exec_depend>basic_robot</exec_depend>
   <exec_depend>controller_manager</exec_depend>
-  <exec_depend>motor_driver</exec_depend>
+  <exec_depend>rear_drive_state_interface</exec_depend>
+  <exec_depend>rear_drive_command_interface</exec_depend>
   <exec_depend>front_steering_state_interface</exec_depend>
+  <exec_depend>front_steering_command_interface</exec_depend>
+  <exec_depend>motor_driver</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
   <exec_depend>roscpp</exec_depend>
   <export>
   </export>

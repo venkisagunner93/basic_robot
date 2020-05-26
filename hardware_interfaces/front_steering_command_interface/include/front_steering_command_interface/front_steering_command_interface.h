@@ -43,7 +43,7 @@ namespace hardware_interface
              */
             void setWheelAngle(double wheel_angle)
             {
-                assert(wheel_angle);
+                assert(wheel_angle_);
                 *wheel_angle_ = wheel_angle;
             }
         

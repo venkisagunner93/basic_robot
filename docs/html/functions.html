@@ -61,11 +61,8 @@ $(function() {
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a id="index_b"></a>- b -</h3><ul>
-<li>BasicRobotHW()
-: <a class="el" href="classBasicRobotHW.html#ae960fde21682e9be050fcd171bd5c671">BasicRobotHW</a>
-</li>
-<li>BasicRobotSim()
-: <a class="el" href="classBasicRobotSim.html#a8609903f149d0af379695b3c61fc1b9c">BasicRobotSim</a>
+<li>BasicRobotBase()
+: <a class="el" href="classBasicRobotBase.html#a394ebe25d0c3292f7d9835a84d685a86">BasicRobotBase</a>
 </li>
 </ul>
 
@@ -74,11 +71,17 @@ $(function() {
 <li>computeFrontWheelHubAngles()
 : <a class="el" href="classKinematics.html#af5e5528ca44f82edae99025410595a36">Kinematics</a>
 </li>
+<li>computeHeading()
+: <a class="el" href="classKinematics.html#a333f2e56be9d8eda2ff9ed4217dac860">Kinematics</a>
+</li>
 <li>computeRearWheelVelocities()
 : <a class="el" href="classKinematics.html#ac2733720e49bcd20662e74ea9334a878">Kinematics</a>
 </li>
 <li>computeStates()
 : <a class="el" href="classKinematics.html#abc359954c01ed158fe090e01b5539f06">Kinematics</a>
+</li>
+<li>computeVelocity()
+: <a class="el" href="classKinematics.html#a7159c40fdd982621f5def3e8aeb5687d">Kinematics</a>
 </li>
 </ul>
 
@@ -100,9 +103,6 @@ $(function() {
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
-<li>getLoopRate()
-: <a class="el" href="classMotionControl.html#aa54a9d8ce253dce201af950a2d7c12b5">MotionControl</a>
-</li>
 <li>getName()
 : <a class="el" href="classhardware__interface_1_1FrontSteeringStateHandle.html#af3e7e4b83211f176051cad32b5640654">hardware_interface::FrontSteeringStateHandle</a>
 , <a class="el" href="classhardware__interface_1_1RearDriveStateHandle.html#a0997cace8fbf80dd1463f4d24f1306b9">hardware_interface::RearDriveStateHandle</a>
@@ -172,9 +172,6 @@ $(function() {
 <li>mean
 : <a class="el" href="structNoiseParameters.html#ac51a65e4d895c69eb68d62cabf647b5c">NoiseParameters</a>
 </li>
-<li>MotionControl()
-: <a class="el" href="classMotionControl.html#ae8bab933ae11e44d888de44d76b246b3">MotionControl</a>
-</li>
 </ul>
 
 
@@ -183,12 +180,10 @@ $(function() {
 : <a class="el" href="classPlanner.html#a32475baddd401921adb1aab3ab842210">Planner</a>
 </li>
 <li>position_command_
-: <a class="el" href="classBasicRobotHW.html#afee748bd8f37242c83de98f6c39f40c7">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#a9fafb5a6015b915bd3ba9de35f9c1a8d">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#a6787dcb8e9ae5c2b7ce32d51be345ab8">BasicRobotBase</a>
 </li>
 <li>position_feedback_
-: <a class="el" href="classBasicRobotHW.html#a90dca1f10ddc925ce7194fbd2478c102">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#ad6401472a3ca72298fedfb7a35c57ca5">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#aef35beaa1cd991f92f37284592d4291a">BasicRobotBase</a>
 </li>
 <li>printMap()
 : <a class="el" href="classMap.html#a1cefc1b8ed6692667e2019f64acc0f5a">Map</a>
@@ -201,13 +196,9 @@ $(function() {
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>read()
-: <a class="el" href="classBasicRobotHW.html#a4246adb060fa49a3eb9d5d26845b6425">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#a8e6a778a8f79818f01dcf0211a3b8e3f">BasicRobotSim</a>
-, <a class="el" href="classFrontSteeringHW.html#aa037e3ea1fbc4e58b40e236810bed3ca">FrontSteeringHW</a>
-, <a class="el" href="classFrontSteeringSim.html#ac9eceb29112f8238e344cd467fae9814">FrontSteeringSim</a>
-, <a class="el" href="classMotionControl.html#a2ab1c995c598f574387e84314c2af682">MotionControl</a>
-, <a class="el" href="classRearDriveHW.html#adcce3bb0a7735810edeaf44bb2f71dee">RearDriveHW</a>
-, <a class="el" href="classRearDriveSim.html#a663d8885fa61436bdd1112b14f2c5a31">RearDriveSim</a>
+: <a class="el" href="classBasicRobotBase.html#a64bb2c7bed72e98fb62a37d6beb4fe5a">BasicRobotBase</a>
+, <a class="el" href="classBasicRobotHW.html#a65df70e5ed1bda01e062977d07429f9a">BasicRobotHW</a>
+, <a class="el" href="classBasicRobotSim.html#a074eed2efbdc51b211f62ac668706237">BasicRobotSim</a>
 </li>
 <li>RearDriveCommandController()
 : <a class="el" href="classrear__drive__command__controller_1_1RearDriveCommandController.html#a9d9a2a13635c71d6831928bac5aa86a4">rear_drive_command_controller::RearDriveCommandController</a>
@@ -215,8 +206,11 @@ $(function() {
 <li>RearDriveCommandHandle()
 : <a class="el" href="classhardware__interface_1_1RearDriveCommandHandle.html#ad3f05c6933b5dd9cf92e058cf62457a4">hardware_interface::RearDriveCommandHandle</a>
 </li>
+<li>RearDriveStateController()
+: <a class="el" href="classrear__drive__state__controller_1_1RearDriveStateController.html#a431ac3fabbe360518f9c12511bc2c1a1">rear_drive_state_controller::RearDriveStateController</a>
+</li>
 <li>RearDriveStateHandle()
-: <a class="el" href="classhardware__interface_1_1RearDriveStateHandle.html#abf8b4ca793044ef32d878647b792e8d3">hardware_interface::RearDriveStateHandle</a>
+: <a class="el" href="classhardware__interface_1_1RearDriveStateHandle.html#aeb3d292f47c5dc8bc2225534ffdb4b99">hardware_interface::RearDriveStateHandle</a>
 </li>
 <li>right_hub_angle
 : <a class="el" href="structFrontWheel.html#a48194ab54ff925e0e0b31b47015d9c03">FrontWheel</a>
@@ -284,44 +278,33 @@ $(function() {
 , <a class="el" href="classrear__drive__command__controller_1_1RearDriveCommandController.html#a5d053e308f6a832679336d4291970e4b">rear_drive_command_controller::RearDriveCommandController</a>
 , <a class="el" href="classrear__drive__state__controller_1_1RearDriveStateController.html#a5eee03357f95a146b72947ce5f277a41">rear_drive_state_controller::RearDriveStateController</a>
 </li>
-<li>updateControllers()
-: <a class="el" href="classMotionControl.html#a64d6dfbced6ac7e8bed6147d9b7c84d5">MotionControl</a>
-</li>
 </ul>
 
 
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>velocity_command_
-: <a class="el" href="classBasicRobotHW.html#a7ef5f4df8fcceab6386bc31d07da1644">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#a679a476e5c6e125a91316f4acaf53c24">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#acfae1f09cb2980e75c3c64543a4defaa">BasicRobotBase</a>
 </li>
 <li>velocity_feedback_
-: <a class="el" href="classBasicRobotHW.html#a4857c5d15155ee70226d0df2c5a4cb13">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#a7388b862cb3c8d56c78a5eda6fe2acc6">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#a1ed94fb8763d194c50a9205ce87a9835">BasicRobotBase</a>
 </li>
 </ul>
 
 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>wheel_angle_command_
-: <a class="el" href="classBasicRobotHW.html#a10eda38eb2d290958f80f4bbeb33a66d">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#ab454fb6e5feb31ae880e8efc3788f626">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#ae960e122456704d3319c404bb1d88c6b">BasicRobotBase</a>
 </li>
 <li>wheel_angle_feedback_
-: <a class="el" href="classBasicRobotHW.html#a49e35de85f6c83cf260af3d38c52048c">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#a885d1e8d5034e7f8a81d8ed0e1f5e5cc">BasicRobotSim</a>
+: <a class="el" href="classBasicRobotBase.html#ab109be7db265c92ad8e760c3d8dd6c1c">BasicRobotBase</a>
 </li>
 <li>width
 : <a class="el" href="structRobotDimensions.html#a25b2ecd6686320d362ef8a0d0ca60f2d">RobotDimensions</a>
 </li>
 <li>write()
-: <a class="el" href="classBasicRobotHW.html#a62add5eabfca2f88a5035db8b8240bb3">BasicRobotHW</a>
-, <a class="el" href="classBasicRobotSim.html#aa05ea705c931dacabb1e47d9ebab3174">BasicRobotSim</a>
-, <a class="el" href="classFrontSteeringHW.html#aa0e57cc4919044aecb7d1c76c8d4ac21">FrontSteeringHW</a>
-, <a class="el" href="classFrontSteeringSim.html#afbf1c3df92319f90d5019729e9067585">FrontSteeringSim</a>
-, <a class="el" href="classMotionControl.html#a1f0a8b1c9f5a80831823dbb9f8dea708">MotionControl</a>
-, <a class="el" href="classRearDriveHW.html#a36461317b3f595464ef080259bc21fae">RearDriveHW</a>
-, <a class="el" href="classRearDriveSim.html#a814f528a26c9dcf0b0d3490883abb2d2">RearDriveSim</a>
+: <a class="el" href="classBasicRobotBase.html#afbc6ef4347fc05e053391692a9e1bc24">BasicRobotBase</a>
+, <a class="el" href="classBasicRobotHW.html#ad98c52f214593f8d59b1df93b1155c74">BasicRobotHW</a>
+, <a class="el" href="classBasicRobotSim.html#a0efb3d3e006cd5c233e2e273d89e06f6">BasicRobotSim</a>
 </li>
 </ul>
 

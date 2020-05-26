@@ -68,3 +68,21 @@ RearWheel Kinematics::computeRearWheelVelocities(const ackermann_msgs::Ackermann
 
     return rear_wheel;
 }
+
+double Kinematics::computeVelocity(const std::vector<double>& wheel_velocities)
+{
+    // Boundary check for two rear wheel velocities
+    if(wheel_velocities.size() == 2)
+    {
+        return (wheel_velocities[0] + wheel_velocities[1]) / 2;
+    }
+}
+
+double Kinematics::computeHeading(const std::vector<double>& hub_angles)
+{
+    // Boundary check for two front wheel hub angles
+    if(hub_angles.size() == 2)
+    {
+        return (hub_angles[0] + hub_angles[1]) / 2;
+    }
+}

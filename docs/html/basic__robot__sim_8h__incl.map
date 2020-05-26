@@ -1,6 +1,10 @@
-<map id="motion_control/include/motion_control/sim/basic_robot_sim.h" name="motion_control/include/motion_control/sim/basic_robot_sim.h">
-<area shape="rect" id="node3" href="$rear__drive__command__interface_8h.html" title="A class for basic robot&#39;s rear drive command. " alt="" coords="162,109,317,165"/>
-<area shape="rect" id="node4" href="$rear__drive__state__interface_8h.html" title="A class for basic robot&#39;s rear drive state. " alt="" coords="221,221,407,262"/>
-<area shape="rect" id="node8" href="$front__steering__command__interface_8h.html" title="A class for basic robot&#39;s front steering command. " alt="" coords="391,109,557,165"/>
-<area shape="rect" id="node9" href="$front__steering__state__interface_8h.html" title="A class for basic robot&#39;s front steering state. " alt="" coords="431,213,594,269"/>
+<map id="motion_control/include/motion_control/basic_robot_sim.h" name="motion_control/include/motion_control/basic_robot_sim.h">
+<area shape="rect" id="node7" href="$basic__robot_8h.html" title="A file for basic robot&#39;s header files. " alt="" coords="989,117,1159,143"/>
+<area shape="rect" id="node13" href="$basic__robot__base_8h.html" title="A class for basic robot&#39;s base. " alt="" coords="1292,109,1435,151"/>
+<area shape="rect" id="node8" href="$basic__robot__types_8h.html" title="A file for basic robot&#39;s types. " alt="" coords="1002,310,1162,351"/>
+<area shape="rect" id="node9" href="$kinematics_8h.html" title="A class for basic robot&#39;s kinematics. " alt="" coords="869,213,1012,240"/>
+<area shape="rect" id="node15" href="$rear__drive__command__interface_8h.html" title="A class for basic robot&#39;s rear drive command. " alt="" coords="1111,199,1266,255"/>
+<area shape="rect" id="node16" href="$rear__drive__state__interface_8h.html" title="A class for basic robot&#39;s rear drive state. " alt="" coords="1194,310,1381,351"/>
+<area shape="rect" id="node20" href="$front__steering__command__interface_8h.html" title="A class for basic robot&#39;s front steering command. " alt="" coords="1341,199,1506,255"/>
+<area shape="rect" id="node21" href="$front__steering__state__interface_8h.html" title="A class for basic robot&#39;s front steering state. " alt="" coords="1405,303,1567,359"/>
 </map>

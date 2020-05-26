@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   front_steering_state_interface
   front_steering_command_interface
   motor_driver
+  tf2_ros
   roscpp
 )
 
@@ -35,22 +36,11 @@ include_directories(include
   ${GAZEBO_INCLUDE_DIRS} 
   ${catkin_INCLUDE_DIRS})
 
-add_library(motion_control_hw_lib
-  src/hw/basic_robot_hw.cpp
-  src/hw/front_steering_hw.cpp
-  src/hw/rear_drive_hw.cpp
-)
-
-add_library(motion_control_sim_lib
-  src/sim/basic_robot_sim.cpp
-  src/sim/front_steering_sim.cpp
-  src/sim/rear_drive_sim.cpp
-)
-
 add_library(motion_control_lib
-  src/motion_control.cpp)
-
-target_link_libraries(motion_control_lib motion_control_hw_lib motion_control_sim_lib ${catkin_LIBRARIES})
+  src/motion_control.cpp
+  src/basic_robot_base.cpp
+  src/basic_robot_sim.cpp
+  src/basic_robot_hw.cpp)
 
 add_executable(motion_control_hw src/motion_control_hw_main.cpp)
 target_link_libraries(motion_control_hw motion_control_lib ${catkin_LIBRARIES})

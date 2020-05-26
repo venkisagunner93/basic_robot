@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['velocity_5fcommand_5f',['velocity_command_',['../classBasicRobotHW.html#a7ef5f4df8fcceab6386bc31d07da1644',1,'BasicRobotHW::velocity_command_()'],['../classBasicRobotSim.html#a679a476e5c6e125a91316f4acaf53c24',1,'BasicRobotSim::velocity_command_()']]],
-  ['velocity_5ffeedback_5f',['velocity_feedback_',['../classBasicRobotHW.html#a4857c5d15155ee70226d0df2c5a4cb13',1,'BasicRobotHW::velocity_feedback_()'],['../classBasicRobotSim.html#a7388b862cb3c8d56c78a5eda6fe2acc6',1,'BasicRobotSim::velocity_feedback_()']]]
+  ['velocity_5fcommand_5f',['velocity_command_',['../classBasicRobotBase.html#acfae1f09cb2980e75c3c64543a4defaa',1,'BasicRobotBase']]],
+  ['velocity_5ffeedback_5f',['velocity_feedback_',['../classBasicRobotBase.html#a1ed94fb8763d194c50a9205ce87a9835',1,'BasicRobotBase']]]
 ];
