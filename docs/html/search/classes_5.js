@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['planner',['Planner',['../classPlanner.html',1,'']]]
+  ['noiseparameters',['NoiseParameters',['../structNoiseParameters.html',1,'']]]
 ];

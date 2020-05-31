@@ -64,6 +64,9 @@ $(function() {
 <li>BasicRobotBase()
 : <a class="el" href="classBasicRobotBase.html#a394ebe25d0c3292f7d9835a84d685a86">BasicRobotBase</a>
 </li>
+<li>BasicRobotSim()
+: <a class="el" href="classBasicRobotSim.html#a8609903f149d0af379695b3c61fc1b9c">BasicRobotSim</a>
+</li>
 </ul>
 
 
@@ -78,7 +81,7 @@ $(function() {
 : <a class="el" href="classKinematics.html#ac2733720e49bcd20662e74ea9334a878">Kinematics</a>
 </li>
 <li>computeStates()
-: <a class="el" href="classKinematics.html#abc359954c01ed158fe090e01b5539f06">Kinematics</a>
+: <a class="el" href="classKinematics.html#adb73a0d2efe57b3be58daee9bfb989e3">Kinematics</a>
 </li>
 <li>computeVelocity()
 : <a class="el" href="classKinematics.html#a7159c40fdd982621f5def3e8aeb5687d">Kinematics</a>
@@ -116,10 +119,6 @@ $(function() {
 <li>getRobotDimensions()
 : <a class="el" href="classKinematics.html#a8f16185dd4942d6423d3ac4997de839f">Kinematics</a>
 </li>
-<li>getUpdateRate()
-: <a class="el" href="classPlanner.html#a1245b622e15233cda941be45b76eb90f">Planner</a>
-, <a class="el" href="classSimulation.html#a22538e804ab0fef459d1af4e1131b091">Simulation</a>
-</li>
 <li>getVelocity()
 : <a class="el" href="classhardware__interface_1_1RearDriveStateHandle.html#a6da155c9a5a064004367837a4fd9d968">hardware_interface::RearDriveStateHandle</a>
 </li>
@@ -141,6 +140,10 @@ $(function() {
 , <a class="el" href="classfront__steering__state__controller_1_1FrontSteeringStateController.html#a8e5a8ca89d16e85900d3a79df1e75a29">front_steering_state_controller::FrontSteeringStateController</a>
 , <a class="el" href="classrear__drive__command__controller_1_1RearDriveCommandController.html#a655e9644e532ce282722c4fc4119ca30">rear_drive_command_controller::RearDriveCommandController</a>
 , <a class="el" href="classrear__drive__state__controller_1_1RearDriveStateController.html#a4cade2fa3f7bf52491431548ad6a3d97">rear_drive_state_controller::RearDriveStateController</a>
+</li>
+<li>initialize()
+: <a class="el" href="classplanner__interface_1_1PlannerBase.html#a38f9005d56266347b20f5a0cd400a2db">planner_interface::PlannerBase</a>
+, <a class="el" href="classplanner__plugins_1_1ManualPlanner.html#af162ecad07107d1d1af87f6ec9b109a3">planner_plugins::ManualPlanner</a>
 </li>
 </ul>
 
@@ -166,8 +169,11 @@ $(function() {
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
-<li>Map()
-: <a class="el" href="classMap.html#a12306af718f86c34dad3873a67d64280">Map</a>
+<li>max_steering_angle
+: <a class="el" href="structLimits.html#a9e75f531da82d77fd49ba40d96d654a8">Limits</a>
+</li>
+<li>max_velocity
+: <a class="el" href="structLimits.html#a4dcddf9e9d4db372e785c3fb0f9a2f32">Limits</a>
 </li>
 <li>mean
 : <a class="el" href="structNoiseParameters.html#ac51a65e4d895c69eb68d62cabf647b5c">NoiseParameters</a>
@@ -185,11 +191,8 @@ $(function() {
 <li>position_feedback_
 : <a class="el" href="classBasicRobotBase.html#aef35beaa1cd991f92f37284592d4291a">BasicRobotBase</a>
 </li>
-<li>printMap()
-: <a class="el" href="classMap.html#a1cefc1b8ed6692667e2019f64acc0f5a">Map</a>
-</li>
 <li>publishSetpoints()
-: <a class="el" href="classPlanner.html#a9fae9548d0458db1f30a1aa7d8b49acb">Planner</a>
+: <a class="el" href="classPlanner.html#a8bccaf49eed3bf4d302f010b6ae4b1b7">Planner</a>
 </li>
 </ul>
 
@@ -222,6 +225,14 @@ $(function() {
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>sendSetpoints()
+: <a class="el" href="classplanner__interface_1_1PlannerBase.html#aa75b7362c9503c05519e9f09e9ce55c6">planner_interface::PlannerBase</a>
+, <a class="el" href="classplanner__plugins_1_1ManualPlanner.html#a6b926f26660792f6ae21c7d9974c7161">planner_plugins::ManualPlanner</a>
+</li>
+<li>setLimits()
+: <a class="el" href="classplanner__interface_1_1PlannerBase.html#a7f8186e617225bb48183d619930d950a">planner_interface::PlannerBase</a>
+, <a class="el" href="classplanner__plugins_1_1ManualPlanner.html#a6052550b915d9e96a6c8e094f3e85d2a">planner_plugins::ManualPlanner</a>
+</li>
 <li>setPosition()
 : <a class="el" href="classhardware__interface_1_1RearDriveCommandHandle.html#ab1d0dad5cea8a38e1a3487de92ebd903">hardware_interface::RearDriveCommandHandle</a>
 </li>
@@ -234,17 +245,11 @@ $(function() {
 <li>setWheelAngle()
 : <a class="el" href="classhardware__interface_1_1FrontSteeringCommandHandle.html#acd5e7d29e7fe2992244c1cfcda28cede">hardware_interface::FrontSteeringCommandHandle</a>
 </li>
-<li>Simulation()
-: <a class="el" href="classSimulation.html#a621e773d9c3168f63d7cb7781f21a344">Simulation</a>
-</li>
 <li>starting()
 : <a class="el" href="classfront__steering__command__controller_1_1FrontSteeringCommandController.html#af597bea88a7ad505b918ce0ef8157407">front_steering_command_controller::FrontSteeringCommandController</a>
 , <a class="el" href="classfront__steering__state__controller_1_1FrontSteeringStateController.html#acb8a5004ff18ed976ea25204947d0b94">front_steering_state_controller::FrontSteeringStateController</a>
 , <a class="el" href="classrear__drive__command__controller_1_1RearDriveCommandController.html#af42682e69c11dc8fe209e97a1eab98aa">rear_drive_command_controller::RearDriveCommandController</a>
 , <a class="el" href="classrear__drive__state__controller_1_1RearDriveStateController.html#a53a87a7512f06f14c71a0bda39a7d37d">rear_drive_state_controller::RearDriveStateController</a>
-</li>
-<li>startSim()
-: <a class="el" href="classSimulation.html#a418b4eb171471080b9603fa2c0859b02">Simulation</a>
 </li>
 <li>State()
 : <a class="el" href="structState.html#afb4608f4a1686ab31d14af3118d702e4">State</a>
@@ -257,9 +262,6 @@ $(function() {
 , <a class="el" href="classfront__steering__state__controller_1_1FrontSteeringStateController.html#a240b6e43acfd4f7ed4bfa159209183b6">front_steering_state_controller::FrontSteeringStateController</a>
 , <a class="el" href="classrear__drive__command__controller_1_1RearDriveCommandController.html#ae649504221c9a54aa7d3da4ef7a2e1dc">rear_drive_command_controller::RearDriveCommandController</a>
 , <a class="el" href="classrear__drive__state__controller_1_1RearDriveStateController.html#af2618c5f4cadfde5a696aa6ad2ce6714">rear_drive_state_controller::RearDriveStateController</a>
-</li>
-<li>stopSim()
-: <a class="el" href="classSimulation.html#a3edaab130396016896c2ed49b6051d96">Simulation</a>
 </li>
 </ul>
 
@@ -327,14 +329,11 @@ $(function() {
 <li>~Kinematics()
 : <a class="el" href="classKinematics.html#ae84a8ae43ee20a8573f7e51471d159b5">Kinematics</a>
 </li>
-<li>~Map()
-: <a class="el" href="classMap.html#ac1ab46138aa61acd0a58b1fd21e0df37">Map</a>
-</li>
 <li>~Planner()
-: <a class="el" href="classPlanner.html#aff801cbef97ac0431bd71a9850c8de33">Planner</a>
+: <a class="el" href="classPlanner.html#ac3db7cf113ad368fa6fce636b6e94abe">Planner</a>
 </li>
-<li>~Simulation()
-: <a class="el" href="classSimulation.html#a80fad3f57dfaf195a36f7bc49bc88279">Simulation</a>
+<li>~PlannerBase()
+: <a class="el" href="classplanner__interface_1_1PlannerBase.html#ab38d1aeb7b71b9f9f66b1a136d5861b3">planner_interface::PlannerBase</a>
 </li>
 </ul>
 </div><!-- contents -->

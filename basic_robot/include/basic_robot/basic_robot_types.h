@@ -63,4 +63,13 @@ struct RobotDimensions
     float width; /**< Width of basic robot */
 };
 
+/**
+ * @brief A struct to represent basic robot limits
+ */
+struct Limits
+{
+    double max_velocity; /**< Maximum velocity of basic robot */
+    double max_steering_angle; /**< Maximum steering angle of basic robot */
+};
+
 #endif  // BASIC_ROBOT_H

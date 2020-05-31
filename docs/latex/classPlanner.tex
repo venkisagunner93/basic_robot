@@ -14,13 +14,12 @@ A basic robot\textquotesingle{}s planner class.
 \item 
 \hyperlink{classPlanner_a32475baddd401921adb1aab3ab842210}{Planner} (ros\+::\+Node\+Handle \&nh)
 \begin{DoxyCompactList}\small\item\em A constructor for planner class. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classPlanner_aff801cbef97ac0431bd71a9850c8de33}\label{classPlanner_aff801cbef97ac0431bd71a9850c8de33}} 
-virtual \hyperlink{classPlanner_aff801cbef97ac0431bd71a9850c8de33}{$\sim$\+Planner} ()
+\mbox{\Hypertarget{classPlanner_ac3db7cf113ad368fa6fce636b6e94abe}\label{classPlanner_ac3db7cf113ad368fa6fce636b6e94abe}} 
+virtual \hyperlink{classPlanner_ac3db7cf113ad368fa6fce636b6e94abe}{$\sim$\+Planner} ()
 \begin{DoxyCompactList}\small\item\em A destructor for planner class. \end{DoxyCompactList}\item 
-int \hyperlink{classPlanner_a1245b622e15233cda941be45b76eb90f}{get\+Update\+Rate} () const
-\begin{DoxyCompactList}\small\item\em A method to get update rate. \end{DoxyCompactList}\item 
-void \hyperlink{classPlanner_a9fae9548d0458db1f30a1aa7d8b49acb}{publish\+Setpoints} (const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&setpoint)
-\begin{DoxyCompactList}\small\item\em A method to publish set points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classPlanner_a8bccaf49eed3bf4d302f010b6ae4b1b7}\label{classPlanner_a8bccaf49eed3bf4d302f010b6ae4b1b7}} 
+void \hyperlink{classPlanner_a8bccaf49eed3bf4d302f010b6ae4b1b7}{publish\+Setpoints} ()
+\begin{DoxyCompactList}\small\item\em A wrapper function around planner plugin publish function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -31,7 +30,7 @@ A basic robot\textquotesingle{}s planner class.
 \index{Planner@{Planner}!Planner@{Planner}}
 \index{Planner@{Planner}!Planner@{Planner}}
 \subsubsection{\texorpdfstring{Planner()}{Planner()}}
-{\footnotesize\ttfamily Planner\+::\+Planner (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Planner\+::\+Planner (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -40,37 +39,6 @@ A constructor for planner class.
 
 \begin{DoxyParams}{Parameters}
 {\em nh} & -\/ R\+OS Nodehandle for communication \\
-\hline
-\end{DoxyParams}
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classPlanner_a1245b622e15233cda941be45b76eb90f}\label{classPlanner_a1245b622e15233cda941be45b76eb90f}} 
-\index{Planner@{Planner}!get\+Update\+Rate@{get\+Update\+Rate}}
-\index{get\+Update\+Rate@{get\+Update\+Rate}!Planner@{Planner}}
-\subsubsection{\texorpdfstring{get\+Update\+Rate()}{getUpdateRate()}}
-{\footnotesize\ttfamily int Planner\+::get\+Update\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-A method to get update rate. 
-
-\begin{DoxyReturn}{Returns}
-int -\/ Update rate 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classPlanner_a9fae9548d0458db1f30a1aa7d8b49acb}\label{classPlanner_a9fae9548d0458db1f30a1aa7d8b49acb}} 
-\index{Planner@{Planner}!publish\+Setpoints@{publish\+Setpoints}}
-\index{publish\+Setpoints@{publish\+Setpoints}!Planner@{Planner}}
-\subsubsection{\texorpdfstring{publish\+Setpoints()}{publishSetpoints()}}
-{\footnotesize\ttfamily void Planner\+::publish\+Setpoints (\begin{DoxyParamCaption}\item[{const ackermann\+\_\+msgs\+::\+Ackermann\+Drive\+Stamped \&}]{setpoint }\end{DoxyParamCaption})}
-
-
-
-A method to publish set points. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em setpoint} & -\/ Setpoint to be published \\
 \hline
 \end{DoxyParams}
 

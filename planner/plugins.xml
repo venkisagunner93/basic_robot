@@ -1,0 +1,12 @@
+<library path="lib/libplanner_plugins">
+    <class type="planner_plugins::ManualPlanner" base_class_type="planner_interface::PlannerBase">
+        <description>
+            Manual planner plugin to send joystick commands
+        </description>
+    </class>
+    <class type="planner_plugins::AutonomousPlanner" base_class_type="planner_interface::PlannerBase">
+        <description>
+            Autonomous planner plugin to send autonomous navigation commands
+        </description>
+    </class>
+</library>

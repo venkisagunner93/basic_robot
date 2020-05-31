@@ -1,0 +1,94 @@
+\hypertarget{classplanner__plugins_1_1ManualPlanner}{}\section{planner\+\_\+plugins\+:\+:Manual\+Planner Class Reference}
+\label{classplanner__plugins_1_1ManualPlanner}\index{planner\+\_\+plugins\+::\+Manual\+Planner@{planner\+\_\+plugins\+::\+Manual\+Planner}}
+
+
+A basic robot\textquotesingle{}s manual planner class for teleoperation.  
+
+
+
+
+{\ttfamily \#include $<$manual\+\_\+planner.\+h$>$}
+
+
+
+Inheritance diagram for planner\+\_\+plugins\+:\+:Manual\+Planner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classplanner__plugins_1_1ManualPlanner__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for planner\+\_\+plugins\+:\+:Manual\+Planner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classplanner__plugins_1_1ManualPlanner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classplanner__plugins_1_1ManualPlanner_af162ecad07107d1d1af87f6ec9b109a3}{initialize} (ros\+::\+Node\+Handle \&nh)
+\begin{DoxyCompactList}\small\item\em A method to initialize plugin. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classplanner__plugins_1_1ManualPlanner_a6b926f26660792f6ae21c7d9974c7161}\label{classplanner__plugins_1_1ManualPlanner_a6b926f26660792f6ae21c7d9974c7161}} 
+void \hyperlink{classplanner__plugins_1_1ManualPlanner_a6b926f26660792f6ae21c7d9974c7161}{send\+Setpoints} ()
+\begin{DoxyCompactList}\small\item\em A method to publish setpoints. \end{DoxyCompactList}\item 
+void \hyperlink{classplanner__plugins_1_1ManualPlanner_a6052550b915d9e96a6c8e094f3e85d2a}{set\+Limits} (const \hyperlink{structLimits}{Limits} \&limits)
+\begin{DoxyCompactList}\small\item\em A method to set limits for basic robot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A basic robot\textquotesingle{}s manual planner class for teleoperation. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classplanner__plugins_1_1ManualPlanner_af162ecad07107d1d1af87f6ec9b109a3}\label{classplanner__plugins_1_1ManualPlanner_af162ecad07107d1d1af87f6ec9b109a3}} 
+\index{planner\+\_\+plugins\+::\+Manual\+Planner@{planner\+\_\+plugins\+::\+Manual\+Planner}!initialize@{initialize}}
+\index{initialize@{initialize}!planner\+\_\+plugins\+::\+Manual\+Planner@{planner\+\_\+plugins\+::\+Manual\+Planner}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool Manual\+Planner\+::initialize (\begin{DoxyParamCaption}\item[{ros\+::\+Node\+Handle \&}]{nh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to initialize plugin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nh} & -\/ R\+OS Node\+Handle for communication \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classplanner__interface_1_1PlannerBase_a38f9005d56266347b20f5a0cd400a2db}{planner\+\_\+interface\+::\+Planner\+Base}.
+
+\mbox{\Hypertarget{classplanner__plugins_1_1ManualPlanner_a6052550b915d9e96a6c8e094f3e85d2a}\label{classplanner__plugins_1_1ManualPlanner_a6052550b915d9e96a6c8e094f3e85d2a}} 
+\index{planner\+\_\+plugins\+::\+Manual\+Planner@{planner\+\_\+plugins\+::\+Manual\+Planner}!set\+Limits@{set\+Limits}}
+\index{set\+Limits@{set\+Limits}!planner\+\_\+plugins\+::\+Manual\+Planner@{planner\+\_\+plugins\+::\+Manual\+Planner}}
+\subsubsection{\texorpdfstring{set\+Limits()}{setLimits()}}
+{\footnotesize\ttfamily void Manual\+Planner\+::set\+Limits (\begin{DoxyParamCaption}\item[{const \hyperlink{structLimits}{Limits} \&}]{limits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A method to set limits for basic robot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limits} & -\/ \hyperlink{structLimits}{Limits} for basic robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classplanner__interface_1_1PlannerBase_a7f8186e617225bb48183d619930d950a}{planner\+\_\+interface\+::\+Planner\+Base}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+planner/include/planner/\hyperlink{manual__planner_8h}{manual\+\_\+planner.\+h}\item 
+planner/src/manual\+\_\+planner.\+cpp\end{DoxyCompactItemize}

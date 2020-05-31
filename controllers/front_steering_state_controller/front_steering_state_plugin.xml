@@ -1,7 +1,7 @@
 <library path="lib/libfront_steering_state_controller">
-  <class name="front_steering_state_controller/FrontSteeringStateController" type="front_steering_state_controller::FrontSteeringStateController" base_class_type="controller_interface::ControllerBase">
-  <description>
-    The front steering state controller publishes the current front steering as a ackermann message. The front steering state controller expects a FrontSteeringStateInterface type of hardware interface.
-  </description>
-  </class>
+	<class name="front_steering_state_controller/FrontSteeringStateController" type="front_steering_state_controller::FrontSteeringStateController" base_class_type="controller_interface::ControllerBase">
+		<description>
+			The front steering state controller publishes the current front steering as a ackermann message. The front steering state controller expects a FrontSteeringStateInterface type of hardware interface.
+		</description>
+	</class>
 </library>

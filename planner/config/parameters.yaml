@@ -1,0 +1,6 @@
+planner_plugin:
+    type: planner_plugins::ManualPlanner
+
+limits:
+    max_velocity: 0.5
+    max_steering_angle: 25

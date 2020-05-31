@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classBasicRobotSim.html" title="A basic robot&#39;s simulation class. " alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node1" href="$classBasicRobotHW.html" title="A basic robot&#39;s hardware class. " alt="" coords="5,5,119,32"/>
 <area shape="rect" id="node2" href="$classBasicRobotBase.html" title="A basic robot&#39;s base class for hardware and sim. " alt="" coords="167,5,287,32"/>
-<area shape="rect" id="node3" href="$classBasicRobotHW.html" title="A basic robot&#39;s hardware class. " alt="" coords="335,5,448,32"/>
+<area shape="rect" id="node3" href="$classBasicRobotSim.html" title="A basic robot&#39;s simulation class. " alt="" coords="335,5,448,32"/>
 </map>

@@ -25,6 +25,9 @@
 class BasicRobotSim : public BasicRobotBase
 {
     public:
+        /**
+         * @brief Construct a new basic robot sim instance
+         */
         BasicRobotSim();
         /**
          * @brief A method for reading from simulation

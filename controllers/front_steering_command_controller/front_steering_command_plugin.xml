@@ -1,7 +1,7 @@
 <library path="lib/libfront_steering_command_controller">
-  <class name="front_steering_command_controller/FrontSteeringCommandController" type="front_steering_command_controller::FrontSteeringCommandController" base_class_type="controller_interface::ControllerBase">
-  <description>
-    The front steering command controller publishes the current front steering as a ackermann message. The front steering command controller expects a FrontSteeringCommandInterface type of hardware interface.
-  </description>
-  </class>
+	<class name="front_steering_command_controller/FrontSteeringCommandController" type="front_steering_command_controller::FrontSteeringCommandController" base_class_type="controller_interface::ControllerBase">
+		<description>
+			The front steering command controller publishes the current front steering as a ackermann message. The front steering command controller expects a FrontSteeringCommandInterface type of hardware interface.
+		</description>
+	</class>
 </library>

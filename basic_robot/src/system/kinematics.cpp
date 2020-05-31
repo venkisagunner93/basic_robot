@@ -16,17 +16,17 @@ RobotDimensions Kinematics::getRobotDimensions() const
     return robot_dimensions_;
 }
 
-State Kinematics::computeStates(ackermann_msgs::AckermannDriveStamped& control_input)
-{   
+State Kinematics::computeStates(ackermann_msgs::AckermannDriveStamped control_input)
+{
     if(control_input.drive.steering_angle > 30.0)
     {
         control_input.drive.steering_angle = 30.0;
-        ROS_WARN("Steering angle cannot be greater than 30.0 degrees");
+        // ROS_WARN("Steering angle cannot be greater than 30.0 degrees");
     }
     else if(control_input.drive.steering_angle < -30.0)
     {
         control_input.drive.steering_angle = -30.0;
-        ROS_WARN("Steering angle cannot be less than -30.0 degrees");
+        // ROS_WARN("Steering angle cannot be less than -30.0 degrees");
     }
     else
     {
@@ -51,8 +51,8 @@ FrontWheel Kinematics::computeFrontWheelHubAngles(const ackermann_msgs::Ackerman
     // Instantaneous center of curvature
     float icc = robot_dimensions_.length / tan(control_input.drive.steering_angle * M_PI / 180);
 
-    front_wheel.right_hub_angle = atan2(robot_dimensions_.length, (icc - robot_dimensions_.width / 2));
-    front_wheel.left_hub_angle = atan2(robot_dimensions_.length, (icc + robot_dimensions_.width / 2));
+    front_wheel.right_hub_angle = atan(robot_dimensions_.length/(icc - robot_dimensions_.width / 2)) * 180 / M_PI;
+    front_wheel.left_hub_angle = atan(robot_dimensions_.length/(icc + robot_dimensions_.width / 2)) * 180 / M_PI;
 
     return front_wheel;
 }

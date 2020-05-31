@@ -8,6 +8,12 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(
   FILES
+  Mode.msg
+)
+
+add_service_files(
+  FILES
+  SetMode.srv
 )
 
 generate_messages(

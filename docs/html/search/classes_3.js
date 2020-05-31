@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['map',['Map',['../classMap.html',1,'']]],
-  ['motioncontrol',['MotionControl',['../classMotionControl.html',1,'']]]
+  ['limits',['Limits',['../structLimits.html',1,'']]]
 ];

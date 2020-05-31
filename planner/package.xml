@@ -8,13 +8,14 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>basic_robot</build_depend>
-  <build_depend>controller_interface</build_depend>
+  <build_depend>pluginlib</build_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>basic_robot</build_export_depend>
-  <build_export_depend>controller_interface</build_export_depend>
+  <build_export_depend>pluginlib</build_export_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>basic_robot</exec_depend>
-  <exec_depend>controller_interface</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
   <export>
+    <planner plugin="${prefix}/plugins.xml"/>
   </export>
 </package>

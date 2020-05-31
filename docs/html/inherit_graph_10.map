@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classPlanner.html" title="A basic robot&#39;s planner class. " alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node1" href="$classplanner__interface_1_1PlannerBase.html" title="A basic robot&#39;s planner base class. " alt="" coords="5,5,135,47"/>
+<area shape="rect" id="node2" href="$classplanner__plugins_1_1ManualPlanner.html" title="A basic robot&#39;s manual planner class for teleoperation. " alt="" coords="183,13,389,39"/>
 </map>

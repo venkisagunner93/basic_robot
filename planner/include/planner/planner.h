@@ -11,9 +11,14 @@
 #define PLANNER_H
 
 #include <ros/ros.h>
+#include <pluginlib/class_loader.h>
 #include <ackermann_msgs/AckermannDriveStamped.h>
 
 #include "basic_robot/basic_robot.h"
+#include "basic_robot/Mode.h"
+#include "basic_robot/SetMode.h"
+
+#include "planner/planner_base.h"
 
 /**
  * @brief A basic robot's planner class
@@ -25,21 +30,15 @@ class Planner
          * @brief A constructor for planner class
          * @param nh - ROS Nodehandle for communication
          */
-        Planner(ros::NodeHandle& nh);
+        explicit Planner(ros::NodeHandle& nh);
         /**
          * @brief A destructor for planner class
          */
-        virtual ~Planner() {}
+        virtual ~Planner();
         /**
-         * @brief A method to get update rate
-         * @return int - Update rate
+         * @brief A wrapper function around planner plugin publish function
          */
-        int getUpdateRate() const;
-        /**
-         * @brief A method to publish set points
-         * @param setpoint - Setpoint to be published
-         */
-        void publishSetpoints(const ackermann_msgs::AckermannDriveStamped& setpoint);
+        void publishSetpoints();
     
     private:
         /**
@@ -47,21 +46,41 @@ class Planner
          */
         ros::NodeHandle nh_;
         /**
-         * @brief Update rate variable for planner
+         * @brief Planner plugin
          */
-        int update_rate_;
+        boost::shared_ptr<planner_interface::PlannerBase> planner_plugin_;
         /**
-         * @brief ROS publisher instance for base/cmd_vel topic
+         * @brief Planner class loader
          */
-        ros::Publisher cmd_vel_publisher_;
+        pluginlib::ClassLoader<planner_interface::PlannerBase> planner_class_loader_;
+        /**
+         * @brief Planner plugin type
+         */
+        std::string planner_plugin_type_;
+        /**
+         * @brief Basic robot's limits
+         */
+        Limits limits_;
+        /**
+         * @brief ROS service server instance for mode of operation
+         */
+        ros::ServiceServer mode_server_;
         /**
          * @brief A method to load parameters from Parameter server
          */
         void loadParameters();
         /**
-         * @brief A method to initialize publishers and subscribers
+         * @brief A method to initialize planner plugin
          */
-        void initializeTransports();
+        void initializePlannerPlugin();
+        /**
+         * @brief A service callback to hotswap planner plugin on the go
+         * @param basic_robot::SetModeRequest 
+         * @param basic_robot::SetModeResponse 
+         * @return true 
+         * @return false 
+         */
+        bool modeServiceCallback(basic_robot::SetModeRequest& request, basic_robot::SetModeResponse& response);
 };
 
 #endif  // PLANNER_H

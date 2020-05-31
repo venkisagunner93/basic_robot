@@ -1,8 +1,22 @@
 <?xml version="1.0"?>
 <launch>
+    <param name="basic_robot" command="cat $(find simulation)/config/basic_robot.urdf"/>
+    <param name="basic_robot_estimate" command="cat $(find simulation)/config/basic_robot_estimate.urdf"/>
+
+    <arg name="map_file" default="$(find simulation)/maps/map.yaml"/>
+    <arg name="perspective" default="$(find simulation)/config/viewer.rviz"/>
+    <arg name="map_topic" default="/basic_map"/>
+    <arg name="map_metadata" default="/basic_map_metadata"/>
+    <arg name="setpoint" default="0.05 10.0"/>
+
     <arg name="controllers" value="rear_drive_state_controller rear_drive_command_controller front_steering_command_controller front_steering_state_controller"/>
+    
     <rosparam file="$(find motion_control)/config/parameters.yaml" command="load"/>
 
     <node name="motion_control_hw" pkg="motion_control" type="motion_control_hw" output="screen"/>
     <node name="controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn $(arg controllers)"/>
+
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file) /map:=$(arg map_topic) /map_metadata:=$(arg map_metadata)"/>
+    <node name="rviz" type="rviz" pkg="rviz" args="-d $(arg perspective)"/>
+    <node name="planner" pkg="planner" type="planner" args="$(arg setpoint)" output="screen"/>
 </launch>

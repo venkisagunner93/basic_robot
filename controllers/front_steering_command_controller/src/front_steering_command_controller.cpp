@@ -28,6 +28,8 @@ void FrontSteeringCommandController::update(const ros::Time& time, const ros::Du
 {
     FrontWheel front_wheel = kinematics_.computeFrontWheelHubAngles(control_input_);
 
+    // ROS_INFO_STREAM(front_wheel.left_hub_angle << ", " << front_wheel.right_hub_angle);
+
     front_steering_command_handle_[0].setWheelAngle(front_wheel.left_hub_angle);
     front_steering_command_handle_[1].setWheelAngle(front_wheel.right_hub_angle);
 }

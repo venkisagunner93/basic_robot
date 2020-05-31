@@ -46,7 +46,7 @@ class Kinematics
          * @param control_input - Control input provided to the system
          * @return State - State of the system computed using kinematics
          */
-        State computeStates(ackermann_msgs::AckermannDriveStamped& control_input);
+        State computeStates(ackermann_msgs::AckermannDriveStamped control_input);
         /**
          * @brief A method to compute front wheel hub angles
          * @param control_input - Control input provided to the system

@@ -6,6 +6,7 @@ find_package(catkin REQUIRED COMPONENTS
   ackermann_msgs
   tf2_ros
   basic_robot
+  pluginlib
 )
 
 ###################################
@@ -22,9 +23,15 @@ include_directories(include
   ${basic_robot_INCLUDE_DIRS}
   ${catkin_INCLUDE_DIRS})
 
-add_executable(planner src/planner.cpp)
+add_library(planner_plugins
+  src/manual_planner.cpp)
+target_link_libraries(planner_plugins ${catkin_LIBRARIES})
 
-target_link_libraries(planner ${catkin_LIBRARIES})
+add_library(planner_lib src/planner.cpp)
+add_dependencies(planner_lib basic_robot_generate_messages_cpp)
+
+add_executable(planner src/planner_main.cpp)
+target_link_libraries(planner planner_lib ${catkin_LIBRARIES})
 
 #############
 ## Install ##

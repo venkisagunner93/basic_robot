@@ -37,7 +37,6 @@ include_directories(include
   ${catkin_INCLUDE_DIRS})
 
 add_library(motion_control_lib
-  src/motion_control.cpp
   src/basic_robot_base.cpp
   src/basic_robot_sim.cpp
   src/basic_robot_hw.cpp)
